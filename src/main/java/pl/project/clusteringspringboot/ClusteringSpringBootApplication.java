@@ -16,6 +16,9 @@ public class ClusteringSpringBootApplication {
 
     private final static Logger log = LogManager.getLogger(ClusteringSpringBootApplication.class);
 
+    @Autowired
+    Workspace workspace;
+
 
     public static void main(String[] args) {
 

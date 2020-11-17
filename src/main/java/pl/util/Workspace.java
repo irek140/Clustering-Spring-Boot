@@ -2,6 +2,7 @@ package pl.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -10,7 +11,6 @@ import java.util.HashMap;
 /**
  * Created by Piotr Lasek on 01.03.2017.
  */
-//@Service
 public class Workspace {
 
     private final static Logger logger = LogManager.getLogger("Workspace");
