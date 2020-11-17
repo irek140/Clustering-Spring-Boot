@@ -29,12 +29,9 @@
 
 package pl.project.clusteringspringboot.spatialindex.rtree;
 
-import spatialindex.spatialindex.*;
+import pl.project.clusteringspringboot.spatialindex.spatialindex.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Stack;
+import java.util.*;
 
 public class Index extends Node
 {

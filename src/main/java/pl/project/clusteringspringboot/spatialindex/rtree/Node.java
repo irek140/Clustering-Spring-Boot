@@ -29,7 +29,7 @@
 
 package pl.project.clusteringspringboot.spatialindex.rtree;
 
-import spatialindex.spatialindex.*;
+import pl.project.clusteringspringboot.spatialindex.spatialindex.*;
 
 import java.io.*;
 import java.util.ArrayList;
