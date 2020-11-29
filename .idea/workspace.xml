@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="98a29bfa-2e09-4f5e-934c-006d7c747c00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/times.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/times.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Studia Magisterskie/Semestr II/Badawczy Projekt Zespołowy/clustering-master/clustering-master" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36206895" />
@@ -115,7 +115,13 @@
       <workItem from="1605632516210" duration="605000" />
       <workItem from="1605809775163" duration="1305000" />
       <workItem from="1605814536423" duration="788000" />
-      <workItem from="1606144847402" duration="1230000" />
+      <workItem from="1606144847402" duration="2859000" />
+      <workItem from="1606220536072" duration="123000" />
+      <workItem from="1606247673919" duration="5616000" />
+      <workItem from="1606386546412" duration="1276000" />
+      <workItem from="1606574584717" duration="8299000" />
+      <workItem from="1606647824706" duration="598000" />
+      <workItem from="1606665757962" duration="1989000" />
     </task>
     <task id="LOCAL-00001" summary="create logger">
       <created>1605522073302</created>
@@ -138,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605604400952</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="xxx">
+      <created>1606149455690</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606149455691</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +174,7 @@
     <MESSAGE value="create logger" />
     <MESSAGE value="bez komentarza" />
     <MESSAGE value="second step in k-means refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="second step in k-means refactoring" />
+    <MESSAGE value="xxx" />
+    <option name="LAST_COMMIT_MESSAGE" value="xxx" />
   </component>
 </project>

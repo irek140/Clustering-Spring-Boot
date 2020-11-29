@@ -37,7 +37,7 @@ public class ClusteringSpringBootApplication {
 
     //Pliki do poprawienia, gdy dorobione zostaną poprawnie pozostałe algorytmy
     //CDMFileConnection
-    //ClusteringSettings
+    //ClusteringSettingsU
 
     @Autowired
     private Workspace workspace;
@@ -54,7 +54,6 @@ public class ClusteringSpringBootApplication {
             if (args.length == 0) {
                 args = new String[]{
                         //"algorithm=C-NBC", //NullPointerException
-                        //"algorithm=pikMeans", //NullPointerException
                         //"algorithm=pi-Means", //NullPointerException
                         "algorithm=k-Means",
                         //"algorithm=k-Means++",
