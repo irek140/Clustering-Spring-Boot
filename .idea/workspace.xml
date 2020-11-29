@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="98a29bfa-2e09-4f5e-934c-006d7c747c00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +120,7 @@
       <workItem from="1606386546412" duration="1276000" />
       <workItem from="1606574584717" duration="8299000" />
       <workItem from="1606647824706" duration="598000" />
-      <workItem from="1606665757962" duration="1989000" />
+      <workItem from="1606665757962" duration="5634000" />
     </task>
     <task id="LOCAL-00001" summary="create logger">
       <created>1605522073302</created>
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606149455691</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="little changes">
+      <created>1606669611678</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606669611678</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +181,7 @@
     <MESSAGE value="bez komentarza" />
     <MESSAGE value="second step in k-means refactoring" />
     <MESSAGE value="xxx" />
-    <option name="LAST_COMMIT_MESSAGE" value="xxx" />
+    <MESSAGE value="little changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="little changes" />
   </component>
 </project>
