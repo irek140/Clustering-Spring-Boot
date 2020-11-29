@@ -1,1 +1,4 @@
 k-Means	(k=8, mi=5)	2010	2904	
+k-Means	(k=8, mi=5)	1897	1991	
+k-Means	(k=8, mi=5)	1904	2998	
+k-Means	(k=8, mi=5)	1985	1972	

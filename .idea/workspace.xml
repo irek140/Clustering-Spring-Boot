@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98a29bfa-2e09-4f5e-934c-006d7c747c00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CDNBCRTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithmSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCRTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/InstanceConstraints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/NbcSpatialObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/PointToRemove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/ColorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/InstanceConstraintsAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/PlotPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/model/IClusteringAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/model/IClusteringParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/model/ISpatialIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/BasicVAFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/LvaHashTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/VectorDist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/util/SetConstraints.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/times.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/times.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,20 +75,20 @@
     <property name="project.structure.side.proportion" value="0.36206895" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="spatialindex" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.project.clusteringspringboot.algorithms.CNBC" />
+      <recent name="pl.project.clusteringspringboot.clustering.old" />
+      <recent name="pl.project.clusteringspringboot.clustering.model" />
+      <recent name="pl.project.clusteringspringboot.algorithms.common" />
       <recent name="pl.util" />
-      <recent name="pl.project.clusteringspringboot.datamining.data" />
-      <recent name="pl.project.clusteringspringboot.datamining.task" />
-      <recent name="pl.project.clusteringspringboot.clustering" />
-      <recent name="pl.project.clusteringspringboot.algorithms.KMeans.DM" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot" />
     </key>
   </component>
