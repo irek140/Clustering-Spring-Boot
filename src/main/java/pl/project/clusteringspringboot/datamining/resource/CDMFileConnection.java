@@ -4,6 +4,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import pl.project.clusteringspringboot.algorithms.CNBC.CNBCAlgorithm;
 import pl.project.clusteringspringboot.algorithms.CNBC.CNBCAlgorithmSettings;
+import pl.project.clusteringspringboot.algorithms.DBSCAN.DBSCANAlgorithm;
+import pl.project.clusteringspringboot.algorithms.DBSCAN.DBSCANAlgorithmSettings;
+import pl.project.clusteringspringboot.algorithms.NBC.NBCAlgorithm;
+import pl.project.clusteringspringboot.algorithms.NBC.NBCAlgorithmSettings;
 import pl.project.clusteringspringboot.clustering.CDMClusteringModel;
 
 //import org.dmtools.clustering.algorithm.CDBSCAN.CDBSCANAlgorithm;
@@ -202,6 +206,14 @@ public class CDMFileConnection implements Connection {
 		} else if (ma.equals(MiningAlgorithm.valueOf(CNBCAlgorithmSettings.NAME))) {
 			// NBC
 			CNBCAlgorithm kma = new CNBCAlgorithm(cs, pds);
+			miningObject = kma.run();
+		} else if (ma.equals(MiningAlgorithm.valueOf(NBCAlgorithmSettings.NAME))) {
+			// NBC
+			NBCAlgorithm kma = new NBCAlgorithm(cs, pds);
+			miningObject = kma.run();
+		} else if (ma.equals(MiningAlgorithm.valueOf(DBSCANAlgorithmSettings.NAME))) {
+			// NBC
+			DBSCANAlgorithm kma = new DBSCANAlgorithm(cs, pds);
 			miningObject = kma.run();
 		} else {
 			throw new JDMException(0, "Not supported.");

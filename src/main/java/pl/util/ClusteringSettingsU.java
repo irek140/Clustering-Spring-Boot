@@ -3,6 +3,8 @@ package pl.util;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import pl.project.clusteringspringboot.algorithms.CNBC.CNBCAlgorithmSettings;
+import pl.project.clusteringspringboot.algorithms.DBSCAN.DBSCANAlgorithmSettings;
+import pl.project.clusteringspringboot.algorithms.NBC.NBCAlgorithmSettings;
 import pl.project.clusteringspringboot.clustering.CDMBaseAlgorithmSettings;
 //import org.dmtools.clustering.algorithm.CDBSCAN.CDBSCANAlgorithmSettings;
 //import org.dmtools.clustering.algorithm.DBSCAN.DBSCANAlgorithmSettings;
@@ -63,6 +65,18 @@ public class ClusteringSettingsU {
                 String icNBC = parameters.get("ic");
                 ((CNBCAlgorithmSettings) algorithmSettings).setK(kCNBC);
                 ((CNBCAlgorithmSettings) algorithmSettings).setIC(icNBC);
+                break;
+            case NBCAlgorithmSettings.NAME:
+                algorithmSettings = new NBCAlgorithmSettings();
+                int kNBC = new Integer(parameters.get("k"));
+                ((NBCAlgorithmSettings) algorithmSettings).setK(kNBC);
+                break;
+            case DBSCANAlgorithmSettings.NAME:
+                algorithmSettings = new DBSCANAlgorithmSettings();
+                double EpsDB = new Double(parameters.get("Eps"));
+                int MinPtsDB = new Integer(parameters.get("MinPts"));
+                ((DBSCANAlgorithmSettings) algorithmSettings).setEps(EpsDB);
+                ((DBSCANAlgorithmSettings) algorithmSettings).setMinPts(MinPtsDB);
                 break;
         }
 

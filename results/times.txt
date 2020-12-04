@@ -17,3 +17,9 @@ k-Means++	(k=8, mi=5)	48	171
 k-Means++	(k=8, mi=5)	46	166	
 k-Means++	(k=8, mi=5)	53	193	
 k-Means	(k=8, mi=5)	16	30	
+DBSCAN	(Eps=10.0, minPts=4)	12254	36888		0
+DBSCAN	(Eps=10.0, minPts=4)	412	1524		5
+DBSCAN	(Eps=10.0, minPts=4)	546	1948		5
+DBSCAN	(Eps=10.0, minPts=4)	361	1336		5
+DBSCAN	(Eps=10.0, minPts=4)	1232	1977		5
+DBSCAN	(Eps=10.0, minPts=4)	908	2135		5
