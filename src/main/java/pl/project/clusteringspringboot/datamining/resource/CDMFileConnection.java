@@ -2,6 +2,8 @@ package pl.project.clusteringspringboot.datamining.resource;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import pl.project.clusteringspringboot.algorithms.CNBC.CNBCAlgorithm;
+import pl.project.clusteringspringboot.algorithms.CNBC.CNBCAlgorithmSettings;
 import pl.project.clusteringspringboot.clustering.CDMClusteringModel;
 
 //import org.dmtools.clustering.algorithm.CDBSCAN.CDBSCANAlgorithm;
@@ -197,7 +199,11 @@ public class CDMFileConnection implements Connection {
 			// K-Means_DM
 			DM_KMeansAlgorithm kma = new DM_KMeansAlgorithm(cs, pds);
 			miningObject = kma.run();
-		}else {
+		} else if (ma.equals(MiningAlgorithm.valueOf(CNBCAlgorithmSettings.NAME))) {
+			// NBC
+			CNBCAlgorithm kma = new CNBCAlgorithm(cs, pds);
+			miningObject = kma.run();
+		} else {
 			throw new JDMException(0, "Not supported.");
 		}
 

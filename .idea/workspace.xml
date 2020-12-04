@@ -2,26 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98a29bfa-2e09-4f5e-934c-006d7c747c00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CDNBCRTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithmSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCRTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/InstanceConstraints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/NbcSpatialObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/PointToRemove.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/ColorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/InstanceConstraintsAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/PlotPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/model/IClusteringAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/model/IClusteringParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/model/ISpatialIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/BasicVAFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/LvaHashTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/VectorDist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/util/SetConstraints.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/times.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/times.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/util/ClusteringSettingsU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/util/ClusteringSettingsU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/ClusteringSpringBootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/ClusteringSpringBootApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/util/ClusteringSettingsU.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/util/ClusteringSettingsU.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Studia Magisterskie/Semestr II/Badawczy Projekt Zespołowy/clustering-master/clustering-master" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36206895" />
@@ -132,6 +121,12 @@
       <workItem from="1605624401138" duration="7195000" />
       <workItem from="1605632516210" duration="605000" />
       <workItem from="1605809775163" duration="1305000" />
+      <workItem from="1606686120749" duration="703000" />
+      <workItem from="1606729363152" duration="7094000" />
+      <workItem from="1606815041038" duration="6631000" />
+      <workItem from="1606859936557" duration="539000" />
+      <workItem from="1607076008476" duration="2324000" />
+      <workItem from="1607107992600" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="create logger">
       <created>1605522073302</created>
@@ -154,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605604400952</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="finish CNGC algorithm implementation">
+      <created>1606678755269</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606678755269</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +179,18 @@
     <MESSAGE value="create logger" />
     <MESSAGE value="bez komentarza" />
     <MESSAGE value="second step in k-means refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="second step in k-means refactoring" />
+    <MESSAGE value="finish CNGC algorithm implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish CNGC algorithm implementation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/util/ClusteringSettingsU.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

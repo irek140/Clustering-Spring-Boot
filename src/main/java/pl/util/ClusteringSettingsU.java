@@ -2,9 +2,9 @@ package pl.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import pl.project.clusteringspringboot.algorithms.CNBC.CNBCAlgorithmSettings;
 import pl.project.clusteringspringboot.clustering.CDMBaseAlgorithmSettings;
 //import org.dmtools.clustering.algorithm.CDBSCAN.CDBSCANAlgorithmSettings;
-//import org.dmtools.clustering.algorithm.CNBC.CNBCAlgorithmSettings;
 //import org.dmtools.clustering.algorithm.DBSCAN.DBSCANAlgorithmSettings;
 //import org.dmtools.clustering.algorithm.DBSCAN.DbScanNetTrafficAlgorithmSettings;
 //import org.dmtools.clustering.algorithm.DBSCAN.DbScanSlicerAlgorithmSettings;
@@ -56,6 +56,13 @@ public class ClusteringSettingsU {
                 break;
             case "DM_K-Means":
                 algorithmSettings = new DM_KMeansAlgorithmSettings();
+                break;
+            case CNBCAlgorithmSettings.NAME:
+                algorithmSettings = new CNBCAlgorithmSettings();
+                int kCNBC = new Integer(parameters.get("k"));
+                String icNBC = parameters.get("ic");
+                ((CNBCAlgorithmSettings) algorithmSettings).setK(kCNBC);
+                ((CNBCAlgorithmSettings) algorithmSettings).setIC(icNBC);
                 break;
         }
 
