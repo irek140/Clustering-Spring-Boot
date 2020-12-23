@@ -23,6 +23,7 @@ import javax.datamining.data.PhysicalDataSet;
 import javax.datamining.resource.Connection;
 import javax.datamining.resource.ConnectionSpec;
 import javax.datamining.task.BuildTask;
+import javax.swing.*;
 import java.util.Date;
 import java.util.HashMap;
 
@@ -50,28 +51,57 @@ public class ClusteringSpringBootApplication {
 
         SpringApplication.run(ClusteringSpringBootApplication.class, args);
 
+        System.setProperty("java.awt.headless", "false");
+        SwingUtilities.invokeLater(() -> {
+            JFrame f = new JFrame("myframe");
+            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            f.setVisible(true);
+        });
+
         try {
             if (args.length == 0) {
                 args = new String[]{
-                        //"algorithm=C-NBC", //NullPointerException
-                        //"algorithm=pi-Means", //NullPointerException
-                        "algorithm=k-Means",
+                        //-----Algorithms-----
+                        "algorithm=C-NBC",
+                        //"algorithm=k-Means",
                         //"algorithm=k-Means++",
-                        //"data=\\data\\my-file-2d.txt",
-                        "data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\Checkins.csv",
-                        //"data=\\data\\CheckinsS.csv",
-                        //"data=\\data\\iris.data-2",
-                        //"data=\\data\\random_100000.csv", // the efficiency of building the pyramid is not fast because of a unified distribution of points resulting in a large number of cells
-                        //"data=\\data\\random_3-1.csv",
-                        //"data=[CUSTOM]\\data\\checkins-pyramid\\",
-                        //"data=[CUSTOM]\\data\\TaxiData\\",
-                        //"data=\\data\\experiment\\birch2.txt",
-                        //"parameters=Eps:10;MinPts:4;dump:yes;plot:yes;ic:random_10"
+                        //"algorithm=NBC",
+                        //"algorithm=DBSCAN",
+                        //"algorithm=C-DBSCAN",
+                        //"algorithm=pi-Means",
+
+                        //-----Data Sets-----
+                        "data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\my-file-2d.txt",
+                        //"data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\Checkins.csv",
+                        //"data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\CheckinsS.csv",
+                        //"data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\iris.data-2",
+                        //"data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\experiment\\birch2.txt",
+
+                        //-----Parameters-----
+                        //C-NBC
+                        //"parameters=k:10;ic:random_4"
                         //"parameters=k:10;dump;plot;close_plot;ic:random_4"
+                        "parameters=k:10;dump;plot;ic:random_4"
+                        //k-Means
+                        //"parameters=k:8;maxIterations:5;deepest:15;depth:15;starting:12;dump"
+                        //k-Means++
+                        //"parameters=k:8;maxIterations:5;deepest:15;depth:15;starting:12;dump"
+                        //NBC
+                        //"parameters=k:8;maxIterations:5;deepest:15;depth:15;starting:12;dump"
                         //"parameters=k:10;dump;plot;ic:random_4"
+                        //DBSCAN
                         //"parameters=Eps:10;MinPts:4;dump:yes;ic:random_10"
+                        //"parameters=Eps:10;MinPts:4;dump:yes;plot:yes;ic:random_10"
                         //"parameters=Eps:6000;MinPts:15;dump;plot;ic:birch2"
-                        "parameters=k:8;maxIterations:5;deepest:15;depth:15;starting:12;dump"
+                        //"parameters=Eps:10;MinPts:4;d:4;ic:random_10;dump:yes"
+                        //CDBSCAN
+                        //"parameters=Eps:10;MinPts:4;d:4;ic:random_10;dump:yes"
+                        //"parameters=Eps:10;MinPts:4;d:4;ic:random_10;dump:yes;plot:yes"
+
+
+
+
+
                 };
             }
 

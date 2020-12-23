@@ -2,3 +2,28 @@ k-Means	(k=8, mi=5)	2010	2904
 k-Means	(k=8, mi=5)	2336	3126	
 k-Means	(k=8, mi=5)	2568	2236	
 k-Means	(k=8, mi=5)	2345	1971	
+DBSCAN	(Eps=10.0, minPts=4)	488	2051		5
+DBSCAN	(Eps=10.0, minPts=4)	554	1573		5
+C-DBSCAN	(Eps=10.0, minPts=4)	505	2355	1064		3
+k-Means	(k=8, mi=5)	23	51	
+k-Means++	(k=8, mi=5)	36	155	
+NBC	k=8	701	2049		32
+NBC	k=8	1014	2048		32
+DBSCAN	(Eps=10.0, minPts=4)	621	1809		5
+DBSCAN	(Eps=10.0, minPts=4)	616	1639		5
+NBC	k=8	467	1946		32
+C-NBC	k=10	1040	1908	8		17
+C-DBSCAN	(Eps=10.0, minPts=4)	508	2310	1369		3
+C-DBSCAN	(Eps=10.0, minPts=4)	484	2345	1169		5
+k-Means	(k=8, mi=5)	10	12	
+k-Means++	(k=8, mi=5)	28	267	
+NBC	k=8	429	2064		32
+C-NBC	k=10	546	2033	9		19
+DBSCAN	(Eps=10.0, minPts=4)	558	1687		5
+C-DBSCAN	(Eps=10.0, minPts=4)	600	2254	1111		1
+C-DBSCAN	(Eps=10.0, minPts=4)	474	2422	1197		3
+DBSCAN	(Eps=6000.0, minPts=15)	472	6196		1
+DBSCAN	(Eps=10.0, minPts=4)	409	1513		5
+NBC	k=10	413	2039		22
+C-NBC	k=10	492	2096	6		18
+C-NBC	k=10	545	1590	9		18

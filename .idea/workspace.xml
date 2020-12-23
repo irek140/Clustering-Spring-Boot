@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98a29bfa-2e09-4f5e-934c-006d7c747c00" name="Default Changelist" comment="">
+    <list default="true" id="98a29bfa-2e09-4f5e-934c-006d7c747c00" name="Default Changelist" comment="after NBC and DBSCAN">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CDBSCAN/CDBSCANAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CDBSCAN/CDBSCANAlgorithmSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CDBSCAN/CDBSCANRTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CDNBCRTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithmSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCRTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/InstanceConstraints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/NbcSpatialObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/PointToRemove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/DBSCAN/DBSCANAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/DBSCAN/DBSCANAlgorithmSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/DBSCAN/DBSCANRTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithmSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/NBC/NBCRTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/Morton2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiBin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiCluster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiCube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithmSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/ColorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/InstanceConstraintsAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/PlotPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/model/IClusteringAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/model/IClusteringParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/model/ISpatialIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/BasicVAFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/LvaHashTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/VectorDist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/util/SetConstraints.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/times.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/times.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/MyVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/MyVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/util/ClusteringSettingsU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/util/ClusteringSettingsU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/BeansConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/BeansConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/ClusteringSpringBootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/ClusteringSpringBootApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/util/ClusteringSettingsU.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/util/ClusteringSettingsU.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,26 +96,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Studia Magisterskie/Semestr II/Badawczy Projekt Zespołowy/clustering-master/clustering-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36206895" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="spatialindex" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.project.clusteringspringboot.algorithms.PiMeans" />
       <recent name="pl.util" />
       <recent name="pl.project.clusteringspringboot.datamining.data" />
       <recent name="pl.project.clusteringspringboot.datamining.task" />
       <recent name="pl.project.clusteringspringboot.clustering" />
-      <recent name="pl.project.clusteringspringboot.algorithms.KMeans.DM" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot\algorithms\CDBSCAN" />
       <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot" />
     </key>
   </component>
@@ -121,6 +168,12 @@
       <workItem from="1606574584717" duration="8299000" />
       <workItem from="1606647824706" duration="598000" />
       <workItem from="1606665757962" duration="5634000" />
+      <workItem from="1607616658066" duration="3865000" />
+      <workItem from="1607680029053" duration="3576000" />
+      <workItem from="1607852844170" duration="639000" />
+      <workItem from="1607945824078" duration="6581000" />
+      <workItem from="1608377329926" duration="4527000" />
+      <workItem from="1608734092231" duration="171000" />
     </task>
     <task id="LOCAL-00001" summary="create logger">
       <created>1605522073302</created>
@@ -182,6 +235,7 @@
     <MESSAGE value="second step in k-means refactoring" />
     <MESSAGE value="xxx" />
     <MESSAGE value="little changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="little changes" />
+    <MESSAGE value="after NBC and DBSCAN" />
+    <option name="LAST_COMMIT_MESSAGE" value="after NBC and DBSCAN" />
   </component>
 </project>

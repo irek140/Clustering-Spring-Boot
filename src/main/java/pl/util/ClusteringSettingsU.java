@@ -2,9 +2,12 @@ package pl.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import pl.project.clusteringspringboot.algorithms.CDBSCAN.CDBSCANAlgorithmSettings;
+import pl.project.clusteringspringboot.algorithms.CNBC.CNBCAlgorithmSettings;
+import pl.project.clusteringspringboot.algorithms.DBSCAN.DBSCANAlgorithmSettings;
+import pl.project.clusteringspringboot.algorithms.NBC.NBCAlgorithmSettings;
 import pl.project.clusteringspringboot.clustering.CDMBaseAlgorithmSettings;
 //import org.dmtools.clustering.algorithm.CDBSCAN.CDBSCANAlgorithmSettings;
-//import org.dmtools.clustering.algorithm.CNBC.CNBCAlgorithmSettings;
 //import org.dmtools.clustering.algorithm.DBSCAN.DBSCANAlgorithmSettings;
 //import org.dmtools.clustering.algorithm.DBSCAN.DbScanNetTrafficAlgorithmSettings;
 //import org.dmtools.clustering.algorithm.DBSCAN.DbScanSlicerAlgorithmSettings;
@@ -56,6 +59,36 @@ public class ClusteringSettingsU {
                 break;
             case "DM_K-Means":
                 algorithmSettings = new DM_KMeansAlgorithmSettings();
+                break;
+            case CNBCAlgorithmSettings.NAME:
+                algorithmSettings = new CNBCAlgorithmSettings();
+                int kCNBC = new Integer(parameters.get("k"));
+                String icNBC = parameters.get("ic");
+                ((CNBCAlgorithmSettings) algorithmSettings).setK(kCNBC);
+                ((CNBCAlgorithmSettings) algorithmSettings).setIC(icNBC);
+                break;
+            case NBCAlgorithmSettings.NAME:
+                algorithmSettings = new NBCAlgorithmSettings();
+                int kNBC = new Integer(parameters.get("k"));
+                ((NBCAlgorithmSettings) algorithmSettings).setK(kNBC);
+                break;
+            case DBSCANAlgorithmSettings.NAME:
+                algorithmSettings = new DBSCANAlgorithmSettings();
+                double EpsDB = new Double(parameters.get("Eps"));
+                int MinPtsDB = new Integer(parameters.get("MinPts"));
+                ((DBSCANAlgorithmSettings) algorithmSettings).setEps(EpsDB);
+                ((DBSCANAlgorithmSettings) algorithmSettings).setMinPts(MinPtsDB);
+                break;
+            case CDBSCANAlgorithmSettings.NAME:
+                algorithmSettings = new CDBSCANAlgorithmSettings();
+                double EpsCDB = new Double(parameters.get("Eps"));
+                int MinPtsCDB = new Integer(parameters.get("MinPts"));
+                int deltaCDB = new Integer(parameters.get("d"));
+                String icCDB = parameters.get("ic");
+                ((CDBSCANAlgorithmSettings) algorithmSettings).setEps(EpsCDB);
+                ((CDBSCANAlgorithmSettings) algorithmSettings).setMinPts(MinPtsCDB);
+                ((CDBSCANAlgorithmSettings) algorithmSettings).setIC(icCDB);
+                ((CDBSCANAlgorithmSettings) algorithmSettings).setDelta(deltaCDB);
                 break;
         }
 

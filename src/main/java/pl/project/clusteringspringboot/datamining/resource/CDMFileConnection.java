@@ -2,6 +2,14 @@ package pl.project.clusteringspringboot.datamining.resource;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import pl.project.clusteringspringboot.algorithms.CDBSCAN.CDBSCANAlgorithm;
+import pl.project.clusteringspringboot.algorithms.CDBSCAN.CDBSCANAlgorithmSettings;
+import pl.project.clusteringspringboot.algorithms.CNBC.CNBCAlgorithm;
+import pl.project.clusteringspringboot.algorithms.CNBC.CNBCAlgorithmSettings;
+import pl.project.clusteringspringboot.algorithms.DBSCAN.DBSCANAlgorithm;
+import pl.project.clusteringspringboot.algorithms.DBSCAN.DBSCANAlgorithmSettings;
+import pl.project.clusteringspringboot.algorithms.NBC.NBCAlgorithm;
+import pl.project.clusteringspringboot.algorithms.NBC.NBCAlgorithmSettings;
 import pl.project.clusteringspringboot.clustering.CDMClusteringModel;
 
 //import org.dmtools.clustering.algorithm.CDBSCAN.CDBSCANAlgorithm;
@@ -197,7 +205,23 @@ public class CDMFileConnection implements Connection {
 			// K-Means_DM
 			DM_KMeansAlgorithm kma = new DM_KMeansAlgorithm(cs, pds);
 			miningObject = kma.run();
-		}else {
+		} else if (ma.equals(MiningAlgorithm.valueOf(CNBCAlgorithmSettings.NAME))) {
+			// NBC
+			CNBCAlgorithm kma = new CNBCAlgorithm(cs, pds);
+			miningObject = kma.run();
+		} else if (ma.equals(MiningAlgorithm.valueOf(NBCAlgorithmSettings.NAME))) {
+			// NBC
+			NBCAlgorithm kma = new NBCAlgorithm(cs, pds);
+			miningObject = kma.run();
+		} else if (ma.equals(MiningAlgorithm.valueOf(DBSCANAlgorithmSettings.NAME))) {
+			// NBC
+			DBSCANAlgorithm kma = new DBSCANAlgorithm(cs, pds);
+			miningObject = kma.run();
+		} else if (ma.equals(MiningAlgorithm.valueOf(CDBSCANAlgorithmSettings.NAME))) {
+			// NBC
+			CDBSCANAlgorithm kma = new CDBSCANAlgorithm(cs, pds);
+			miningObject = kma.run();
+		} else {
 			throw new JDMException(0, "Not supported.");
 		}
 

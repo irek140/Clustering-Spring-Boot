@@ -1,7 +1,6 @@
 package pl.project.clusteringspringboot.algorithms.common;
 
 
-
 import pl.project.clusteringspringboot.spatialindex.spatialindex.IData;
 import pl.project.clusteringspringboot.spatialindex.spatialindex.INode;
 import pl.project.clusteringspringboot.spatialindex.spatialindex.IVisitor;
