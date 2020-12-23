@@ -1,6 +1,6 @@
-package org.dmtools.clustering.algorithm.piKMeans;
+package pl.project.clusteringspringboot.algorithms.PiMeans;
 
-import org.dmtools.clustering.CDMBaseAlgorithmSettings;
+import pl.project.clusteringspringboot.clustering.CDMBaseAlgorithmSettings;
 
 import javax.datamining.JDMException;
 import javax.datamining.MiningAlgorithm;

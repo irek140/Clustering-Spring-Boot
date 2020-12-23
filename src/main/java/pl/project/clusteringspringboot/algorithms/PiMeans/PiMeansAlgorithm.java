@@ -3,8 +3,6 @@ package pl.project.clusteringspringboot.algorithms.PiMeans;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
-import org.dmtools.clustering.algorithm.piKMeans.PiKMeansAlgorithmSettings;
-import pl.project.clusteringspringboot.algorithms.PiMeans.PiMeansAlgorithmSettings;
 import pl.project.clusteringspringboot.clustering.model.IClusteringData;
 import pl.project.clusteringspringboot.clustering.old.ClusteringTimer;
 import pl.project.clusteringspringboot.datamining.data.CDMFilePhysicalDataSet;
