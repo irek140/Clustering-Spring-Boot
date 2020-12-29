@@ -14,7 +14,6 @@ import pl.project.clusteringspringboot.datamining.data.CDMFilePhysicalDataSet;
 import pl.project.clusteringspringboot.datamining.data.PhysicalAttribute;
 import pl.project.clusteringspringboot.datamining.resource.CDMBasicMiningObject;
 
-
 import java.util.ArrayList;
 import java.util.Collection;
 

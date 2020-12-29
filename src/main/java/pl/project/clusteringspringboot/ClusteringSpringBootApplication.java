@@ -35,7 +35,6 @@ public class ClusteringSpringBootApplication {
 
     private final static Logger log = LogManager.getLogger(ClusteringSpringBootApplication.class);
 
-
     @Autowired
     private static Workspace workspace;
 
@@ -67,10 +66,10 @@ public class ClusteringSpringBootApplication {
                         //"algorithm=C-NBC",
                         //"algorithm=k-Means",
                         //"algorithm=k-Means++",
-                        "algorithm=NBC",
+                        //"algorithm=NBC",
                         //"algorithm=DBSCAN",
                         //"algorithm=C-DBSCAN",
-                        //"algorithm=pi-Means",
+                        "algorithm=pi-Means",
 
                         //-----Data Sets-----
                         //"data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\my-file-2d.txt",
@@ -90,7 +89,7 @@ public class ClusteringSpringBootApplication {
                         //"parameters=k:8;maxIterations:5;deepest:15;depth:15;starting:12;dump"
                         //NBC
                         //"parameters=k:8;maxIterations:5;deepest:15;depth:15;starting:12;dump"
-                        "parameters=k:10;dump;plot;ic:random_4"
+                        //"parameters=k:10;dump;plot;ic:random_4"
                         //DBSCAN
                         //"parameters=Eps:10;MinPts:4;dump:yes;ic:random_10"
                         //"parameters=Eps:10;MinPts:4;dump:yes;plot:yes;ic:random_10"
@@ -100,7 +99,7 @@ public class ClusteringSpringBootApplication {
                         //"parameters=Eps:10;MinPts:4;d:4;ic:random_10;dump:yes"
                         //"parameters=Eps:10;MinPts:4;d:4;ic:random_10;dump:yes;plot:yes"
                         //pi-Means
-                        //"parameters=k:4;maxIterations:5;deepest:1;depth:1;starting:1;dump"
+                        "parameters=k:4;maxIterations:5;deepest:1;depth:1;starting:1;dump"
 
 
                 };

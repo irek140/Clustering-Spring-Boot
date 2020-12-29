@@ -1,5 +1,6 @@
 package pl.project.clusteringspringboot.algorithms.DBSCAN;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import pl.project.clusteringspringboot.algorithms.common.PlotPanel;
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
 import pl.project.clusteringspringboot.clustering.CDMClusteringSettings;
@@ -16,6 +17,9 @@ import java.util.Collection;
  *
  */
 public class DBSCANAlgorithm extends CDMBasicClusteringAlgorithm {
+
+    @Autowired
+    private static Dump dump;
 
 
     private double Eps;
@@ -56,11 +60,11 @@ public class DBSCANAlgorithm extends CDMBasicClusteringAlgorithm {
 
         IClusteringData cd = dbscan.getResult();
 
-        String logFileName = Dump.getLogFileName(DBSCANAlgorithmSettings.NAME, getPhysicalDataSet().getDescription(),
+        String logFileName = dump.getLogFileName(DBSCANAlgorithmSettings.NAME, getPhysicalDataSet().getDescription(),
                 getDescription() + " (clusters=" + dbscan.clusterCount() + ")");
 
         if (dump()) {
-            Dump.toFile(cd.get(), logFileName + ".csv", true); //data to dump
+            dump.toFile(cd.get(), logFileName + ".csv", true); //data to dump
         }
 
         // Show result

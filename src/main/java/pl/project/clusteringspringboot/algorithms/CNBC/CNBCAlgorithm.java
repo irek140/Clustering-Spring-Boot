@@ -1,5 +1,6 @@
 package pl.project.clusteringspringboot.algorithms.CNBC;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import pl.project.clusteringspringboot.algorithms.common.PlotPanel;
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
 import pl.project.clusteringspringboot.clustering.CDMClusteringSettings;
@@ -18,6 +19,9 @@ import java.util.ArrayList;
  *
  */
 public class CNBCAlgorithm extends CDMBasicClusteringAlgorithm {
+
+	@Autowired
+	private static Dump dump;
 
 	int k = 0;
 	String ic = null;
@@ -70,11 +74,11 @@ public class CNBCAlgorithm extends CDMBasicClusteringAlgorithm {
 
 		ArrayList<Point> result = nbc.getDataset();
 
-		String logFileName = Dump.getLogFileName(CNBCAlgorithmSettings.NAME,
+		String logFileName = dump.getLogFileName(CNBCAlgorithmSettings.NAME,
 				getPhysicalDataSet().getDescription(), getDescription() + " (clusters=" + nbc.clusterCount() + ")");
 
 		if (dump()) {
-			Dump.toFile(cd.get(), logFileName + ".csv", true);
+			dump.toFile(cd.get(), logFileName + ".csv", true);
 		}
 
 		if (plot()) {

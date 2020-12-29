@@ -2,6 +2,7 @@ package pl.project.clusteringspringboot.algorithms.PiMeans;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
 import pl.project.clusteringspringboot.clustering.CDMClusteringSettings;
 import pl.project.clusteringspringboot.clustering.model.IClusteringData;
@@ -25,6 +26,9 @@ import java.util.*;
  *       3. Start writing the paper
  */
 public class PiMeansAlgorithm extends CDMBasicClusteringAlgorithm {
+
+    @Autowired
+    private static Dump dump;
 
     int k;
     int maxIterations;
@@ -257,7 +261,7 @@ public class PiMeansAlgorithm extends CDMBasicClusteringAlgorithm {
 
         // Dumping results to a file(s) and/or plotting results.
         if (dump()) {
-            String logFileName = Dump.getLogFileName(PiKMeansAlgorithmSettings.NAME,
+            String logFileName = dump.getLogFileName(PiKMeansAlgorithmSettings.NAME,
                     getPhysicalDataSet().getDescription(), getDescription());
 
             log.info("Writing results to " + logFileName);
@@ -266,12 +270,12 @@ public class PiMeansAlgorithm extends CDMBasicClusteringAlgorithm {
             layer = picube.getLayer(initialLayer);
 
             for (int i = 0; i < maxIterations; i++) {
-                Dump.toFile(Utils.clusteredLayerToString(seeds, layer, i),
+                dump.toFile(Utils.clusteredLayerToString(seeds, layer, i),
                         logFileName + "_iter_" + i + ".csv");
             }
 
             // dumping the rest...
-            Dump.toFile(data, logFileName + ".csv", true);
+            dump.toFile(data, logFileName + ".csv", true);
         }
 
         basicMiningObject.setDescription(timer.getLog());

@@ -5,7 +5,6 @@ import pl.project.clusteringspringboot.algorithms.CNBC.InstanceConstraints;
 import pl.project.clusteringspringboot.clustering.model.IConstraintObject;
 import pl.util.SetConstraints;
 
-
 import java.util.ArrayList;
 
 /**

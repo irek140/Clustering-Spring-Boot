@@ -2,6 +2,7 @@ package pl.project.clusteringspringboot.algorithms.CDBSCAN;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
 import pl.project.clusteringspringboot.algorithms.CNBC.InstanceConstraints;
 import pl.project.clusteringspringboot.algorithms.common.PlotPanel;
@@ -19,6 +20,9 @@ import java.util.ArrayList;
  * Created by Piotr Lasek on 30.05.2017.
  */
 public class CDBSCANAlgorithm extends CDMBasicClusteringAlgorithm {
+
+    @Autowired
+    private static Dump dump;
 
     private final static Logger log = LogManager.getLogger("CDBSCANAlgorithm");
 
@@ -79,11 +83,11 @@ public class CDBSCANAlgorithm extends CDMBasicClusteringAlgorithm {
 
         IClusteringData resultToDump = dbscan.getResult();
 
-        String logFileName = Dump.getLogFileName(CDBSCANAlgorithmSettings.NAME, getPhysicalDataSet().getDescription(),
+        String logFileName = dump.getLogFileName(CDBSCANAlgorithmSettings.NAME, getPhysicalDataSet().getDescription(),
                 getDescription() + " (clusters=" + dbscan.clusterCount() + ")");
 
         if (dump()) {
-            Dump.toFile(resultToDump.get(), logFileName + ".csv", true);
+            dump.toFile(resultToDump.get(), logFileName + ".csv", true);
         }
 
         if (plot()) {

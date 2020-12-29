@@ -7,7 +7,6 @@ import pl.project.clusteringspringboot.datamining.VerificationReport;
 import java.util.Date;
 import java.util.Map;
 
-
 public class CDMBuildTask implements BuildTask {
 	
 	private String buildDataName;
