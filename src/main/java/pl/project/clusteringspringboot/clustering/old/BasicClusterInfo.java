@@ -1,6 +1,5 @@
 package pl.project.clusteringspringboot.clustering.old;
 
-
 import pl.project.clusteringspringboot.clustering.model.IClusterInfo;
 
 public class BasicClusterInfo implements IClusterInfo

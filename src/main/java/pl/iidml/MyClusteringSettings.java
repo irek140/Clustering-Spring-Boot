@@ -18,7 +18,6 @@ import pl.project.clusteringspringboot.datamining.data.LogicalData;
 import java.util.Collection;
 import java.util.Date;
 
-
 public class MyClusteringSettings implements ClusteringSettings {
 
 	@Override

@@ -1,6 +1,5 @@
 package pl.project.clusteringspringboot.datamining.resource;
 
-
 import pl.project.clusteringspringboot.datamining.*;
 import pl.project.clusteringspringboot.datamining.Enum;
 import pl.project.clusteringspringboot.datamining.base.Task;

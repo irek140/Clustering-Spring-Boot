@@ -8,7 +8,6 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Set;
 
-
 public class FilePhysicalDataRecord extends BasicMiningObject implements PhysicalDataRecord {
 
 	HashMap<String, Object> keyValueMap;

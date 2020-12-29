@@ -1,6 +1,5 @@
 package pl.iidml;
 
-
 import pl.project.clusteringspringboot.datamining.CDMException;
 import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
 import pl.project.clusteringspringboot.datamining.clustering.AggregationFunction;
@@ -8,7 +7,6 @@ import pl.project.clusteringspringboot.datamining.clustering.AttributeComparison
 import pl.project.clusteringspringboot.datamining.clustering.ClusteringCapability;
 import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
 import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettingsFactory;
-
 
 public class MyClusteringSettingsFactory implements ClusteringSettingsFactory {
 

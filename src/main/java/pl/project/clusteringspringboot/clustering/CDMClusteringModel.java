@@ -10,7 +10,6 @@ import pl.project.clusteringspringboot.datamining.rule.Rule;
 import java.util.ArrayList;
 import java.util.Collection;
 
-
 public class CDMClusteringModel extends CDMAbstractModel implements ClusteringModel {
 
 	ArrayList<Cluster> clusters = new ArrayList<Cluster>();

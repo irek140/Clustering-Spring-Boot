@@ -1,6 +1,5 @@
 package pl.iidml;
 
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -33,7 +32,6 @@ import pl.project.clusteringspringboot.datamining.resource.ConnectionSpec;
 import pl.project.clusteringspringboot.datamining.resource.PersistenceOption;
 import pl.project.clusteringspringboot.datamining.task.BuildTask;
 
-
 public class FileConnection implements Connection {
 
 	HashMap<String, MiningObject> miningObjects =
@@ -42,8 +40,7 @@ public class FileConnection implements Connection {
 	FileConnectionFactory factory;
 	
 	ConnectionSpec connectionSpec;
-	
-	
+
 	
 	public FileConnection(FileConnectionFactory factory, ConnectionSpec cs)
 	{

@@ -1,6 +1,5 @@
 package pl.iidml;
 
-
 import pl.project.clusteringspringboot.datamining.CDMException;
 import pl.project.clusteringspringboot.datamining.resource.Connection;
 import pl.project.clusteringspringboot.datamining.resource.ConnectionCapability;
@@ -8,7 +7,6 @@ import pl.project.clusteringspringboot.datamining.resource.ConnectionFactory;
 import pl.project.clusteringspringboot.datamining.resource.ConnectionSpec;
 
 import java.util.HashMap;
-
 
 public class FileConnectionFactory implements ConnectionFactory {
 

@@ -1,6 +1,5 @@
 package pl.iidml;
 
-
 import pl.project.clusteringspringboot.datamining.CDMException;
 import pl.project.clusteringspringboot.datamining.NamedObject;
 import pl.project.clusteringspringboot.datamining.data.AttributeDataType;
@@ -12,7 +11,6 @@ import pl.project.clusteringspringboot.datamining.statistics.AttributeStatistics
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
-
 
 public class FilePhysicalDataSet implements PhysicalDataSet {
 

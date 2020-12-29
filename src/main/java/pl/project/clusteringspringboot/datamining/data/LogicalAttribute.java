@@ -1,6 +1,5 @@
 package pl.project.clusteringspringboot.datamining.data;
 
-
 public interface LogicalAttribute extends Attribute {
 
     void setName(String var1);

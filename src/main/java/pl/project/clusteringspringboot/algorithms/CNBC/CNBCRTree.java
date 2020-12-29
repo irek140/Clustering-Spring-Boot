@@ -13,7 +13,6 @@ import pl.project.clusteringspringboot.spatialindex.storagemanager.MemoryStorage
 import pl.project.clusteringspringboot.spatialindex.storagemanager.PropertySet;
 import pl.project.clusteringspringboot.spatialindex.storagemanager.RandomEvictionsBuffer;
 
-
 import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;

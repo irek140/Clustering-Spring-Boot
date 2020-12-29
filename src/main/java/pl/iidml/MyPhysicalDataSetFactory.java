@@ -1,11 +1,9 @@
 package pl.iidml;
 
-
 import pl.project.clusteringspringboot.datamining.CDMException;
 import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
 import pl.project.clusteringspringboot.datamining.data.PhysicalDataSetCapability;
 import pl.project.clusteringspringboot.datamining.data.PhysicalDataSetFactory;
-
 
 /**
  * 

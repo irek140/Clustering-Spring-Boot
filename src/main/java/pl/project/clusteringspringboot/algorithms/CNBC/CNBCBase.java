@@ -3,7 +3,6 @@ package pl.project.clusteringspringboot.algorithms.CNBC;
 import pl.project.clusteringspringboot.clustering.model.*;
 import pl.project.clusteringspringboot.clustering.old.*;
 
-
 import java.awt.*;
 import java.io.FileOutputStream;
 import java.util.ArrayList;

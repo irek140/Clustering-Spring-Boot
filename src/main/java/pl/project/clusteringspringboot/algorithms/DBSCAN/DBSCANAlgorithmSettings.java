@@ -6,7 +6,6 @@ import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
 import pl.project.clusteringspringboot.datamining.VerificationReport;
 import pl.project.clusteringspringboot.datamining.base.AlgorithmSettings;
 
-
 public class DBSCANAlgorithmSettings extends CDMBaseAlgorithmSettings implements AlgorithmSettings {
 
 	public static final String NAME = "DBSCAN";

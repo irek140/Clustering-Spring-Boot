@@ -1,6 +1,5 @@
 package pl.project.clusteringspringboot.datamining.task;
 
-
 import pl.project.clusteringspringboot.datamining.CDMException;
 import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
 import pl.project.clusteringspringboot.datamining.MiningFunction;

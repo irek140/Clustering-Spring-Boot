@@ -9,7 +9,6 @@ import pl.project.clusteringspringboot.datamining.task.BuildTask;
 import java.util.Date;
 import java.util.Map;
 
-
 public class MyBuildTask implements BuildTask {
 	
 	private String buildDataName;

@@ -3,7 +3,6 @@ package pl.project.clusteringspringboot.algorithms.CNBC;
 import pl.project.clusteringspringboot.clustering.model.ISpatialObject;
 import pl.project.clusteringspringboot.clustering.old.BasicSpatialObject;
 
-
 public class NbcSpatialObject extends BasicSpatialObject
 {
 	int clst_no;

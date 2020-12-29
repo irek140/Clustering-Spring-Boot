@@ -2,7 +2,6 @@ package pl.project.clusteringspringboot;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import pl.project.clusteringspringboot.datamining.resource.CDMFileConnectionFactory;
 import pl.util.DataSet;
 import pl.util.Dump;
 import pl.util.Workspace;

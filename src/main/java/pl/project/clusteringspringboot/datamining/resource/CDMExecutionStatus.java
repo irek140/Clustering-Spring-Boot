@@ -1,6 +1,5 @@
 package pl.project.clusteringspringboot.datamining.resource;
 
-
 import pl.project.clusteringspringboot.datamining.ExecutionState;
 import pl.project.clusteringspringboot.datamining.ExecutionStatus;
 import java.util.Date;

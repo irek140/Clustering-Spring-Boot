@@ -1,6 +1,5 @@
 package pl.project.clusteringspringboot.algorithms.CNBC;
 
-
 import pl.project.clusteringspringboot.clustering.CDMBaseAlgorithmSettings;
 import pl.project.clusteringspringboot.datamining.CDMException;
 import pl.project.clusteringspringboot.datamining.MiningAlgorithm;

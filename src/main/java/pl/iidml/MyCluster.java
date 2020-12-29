@@ -1,12 +1,10 @@
 package pl.iidml;
 
-
 import pl.project.clusteringspringboot.datamining.CDMException;
 import pl.project.clusteringspringboot.datamining.clustering.Cluster;
 import pl.project.clusteringspringboot.datamining.rule.Predicate;
 import pl.project.clusteringspringboot.datamining.rule.Rule;
 import pl.project.clusteringspringboot.datamining.statistics.AttributeStatisticsSet;
-
 
 public class MyCluster implements Cluster {
 

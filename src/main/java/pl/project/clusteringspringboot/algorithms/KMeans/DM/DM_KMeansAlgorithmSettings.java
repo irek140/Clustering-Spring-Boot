@@ -1,6 +1,5 @@
 package pl.project.clusteringspringboot.algorithms.KMeans.DM;
 
-
 import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
 import pl.project.clusteringspringboot.datamining.VerificationReport;
 import pl.project.clusteringspringboot.datamining.base.AlgorithmSettings;

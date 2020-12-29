@@ -3,12 +3,10 @@ package pl.project.clusteringspringboot.clustering.old;
 import pl.project.clusteringspringboot.clustering.model.IClusteringDataSource;
 import pl.project.clusteringspringboot.clustering.model.IClusteringObject;
 
-
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.*;
-
 
 public class DataSourceManager
 {

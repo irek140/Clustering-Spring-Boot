@@ -2,7 +2,6 @@ package pl.project.clusteringspringboot.datamining.resource;
 
 import java.util.Locale;
 
-
 public class CDMFileConnectionSpec implements ConnectionSpec {
 	
 	String URI;

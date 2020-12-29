@@ -6,7 +6,6 @@ import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
 import pl.project.clusteringspringboot.datamining.VerificationReport;
 import pl.project.clusteringspringboot.datamining.base.AlgorithmSettings;
 
-
 /**
  * Created by Piotr Lasek on 30.05.2017.
  */

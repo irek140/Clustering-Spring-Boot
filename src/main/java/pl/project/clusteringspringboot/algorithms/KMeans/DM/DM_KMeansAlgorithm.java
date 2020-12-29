@@ -14,7 +14,6 @@ import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
 import java.util.ArrayList;
 import java.util.Collection;
 
-
 public class DM_KMeansAlgorithm extends CDMBasicClusteringAlgorithm {
 	
 	int k = 0;

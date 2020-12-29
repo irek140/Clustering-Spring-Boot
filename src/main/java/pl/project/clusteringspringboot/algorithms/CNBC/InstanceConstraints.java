@@ -3,7 +3,6 @@ package pl.project.clusteringspringboot.algorithms.CNBC;
 import pl.project.clusteringspringboot.clustering.CDMCluster;
 import pl.project.clusteringspringboot.clustering.model.IConstraintObject;
 
-
 import java.util.ArrayList;
 
 /**

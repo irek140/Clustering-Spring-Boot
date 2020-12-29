@@ -4,7 +4,6 @@ import pl.project.clusteringspringboot.datamining.resource.ConnectionSpec;
 
 import java.util.Locale;
 
-
 public class FileConnectionSpec implements ConnectionSpec {
 
 	@Override

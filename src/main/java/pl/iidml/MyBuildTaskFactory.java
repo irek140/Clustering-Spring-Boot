@@ -1,13 +1,11 @@
 package pl.iidml;
 
-
 import pl.project.clusteringspringboot.datamining.CDMException;
 import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
 import pl.project.clusteringspringboot.datamining.MiningFunction;
 import pl.project.clusteringspringboot.datamining.task.BuildTask;
 import pl.project.clusteringspringboot.datamining.task.BuildTaskCapability;
 import pl.project.clusteringspringboot.datamining.task.BuildTaskFactory;
-
 
 public class MyBuildTaskFactory implements BuildTaskFactory {
 
