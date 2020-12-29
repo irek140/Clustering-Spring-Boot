@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98a29bfa-2e09-4f5e-934c-006d7c747c00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/times.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/times.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/BeansConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/BeansConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/BeansConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/ClusteringSpringBootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/ClusteringSpringBootApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/common/PlotPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/common/PlotPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/util/SetConstraints.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/util/SetConstraints.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +131,7 @@
       <workItem from="1608734092231" duration="617000" />
       <workItem from="1609174650839" duration="16612000" />
       <workItem from="1609239291573" duration="10960000" />
-      <workItem from="1609266007404" duration="8137000" />
+      <workItem from="1609266007404" duration="8392000" />
     </task>
     <task id="LOCAL-00001" summary="create logger">
       <created>1605522073302</created>
@@ -196,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609281023153</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="finish creating Dump and DataSet beans">
+      <created>1609281567673</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609281567674</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +225,7 @@
     <MESSAGE value="Finish working with all algorithms &amp; remove JDM" />
     <MESSAGE value="refactoring code" />
     <MESSAGE value="finish creating workspace bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish creating workspace bean" />
+    <MESSAGE value="finish creating Dump and DataSet beans" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish creating Dump and DataSet beans" />
   </component>
 </project>
