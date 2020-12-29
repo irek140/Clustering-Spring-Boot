@@ -2,13 +2,14 @@ package pl.project.clusteringspringboot.algorithms.DBSCAN;
 
 import pl.project.clusteringspringboot.algorithms.common.PlotPanel;
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
+import pl.project.clusteringspringboot.clustering.CDMClusteringSettings;
 import pl.project.clusteringspringboot.clustering.model.IClusteringData;
 import pl.project.clusteringspringboot.clustering.model.IClusteringObject;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
 import pl.util.Dump;
 
-import javax.datamining.MiningObject;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.data.PhysicalDataSet;
 import java.util.Collection;
 
 /**
@@ -20,7 +21,7 @@ public class DBSCANAlgorithm extends CDMBasicClusteringAlgorithm {
     private double Eps;
     private int MinPts;
 
-    public DBSCANAlgorithm(ClusteringSettings clusteringSettings, PhysicalDataSet physicalDataSet) {
+    public DBSCANAlgorithm(CDMClusteringSettings clusteringSettings, PhysicalDataSet physicalDataSet) {
         super(clusteringSettings, physicalDataSet);
 
         DBSCANAlgorithmSettings das = (DBSCANAlgorithmSettings) clusteringSettings.getAlgorithmSettings();

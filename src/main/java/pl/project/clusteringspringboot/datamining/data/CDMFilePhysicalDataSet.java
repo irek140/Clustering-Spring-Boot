@@ -1,16 +1,12 @@
 package pl.project.clusteringspringboot.datamining.data;
 
 import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.NamedObject;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
 import pl.project.clusteringspringboot.datamining.base.CDMAbstractMiningObject;
+import pl.project.clusteringspringboot.datamining.resource.Connection;
+import pl.project.clusteringspringboot.datamining.statistics.AttributeStatisticsSet;
 
-import javax.datamining.JDMException;
-import javax.datamining.NamedObject;
-import javax.datamining.data.AttributeDataType;
-import javax.datamining.data.PhysicalAttribute;
-import javax.datamining.data.PhysicalAttributeRole;
-import javax.datamining.data.PhysicalDataSet;
-import javax.datamining.resource.Connection;
-import javax.datamining.statistics.AttributeStatisticsSet;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -23,7 +19,7 @@ import java.util.Collection;
  *
  */
 public class CDMFilePhysicalDataSet extends CDMAbstractMiningObject implements
-        PhysicalDataSet {
+		PhysicalDataSet {
 
 	String URI;
 	String separator;
@@ -146,17 +142,17 @@ public class CDMFilePhysicalDataSet extends CDMAbstractMiningObject implements
 	}
 
 	@Override
-	public void addAttribute(PhysicalAttribute arg0) throws JDMException {
+	public void addAttribute(PhysicalAttribute arg0) throws CDMException {
 		attributes.add(arg0);
 	}
 
 	@Override
-	public void addAttributes(PhysicalAttribute[] arg0) throws JDMException {
+	public void addAttributes(PhysicalAttribute[] arg0) throws CDMException {
 		throw new CDMException("addAttributes() not supported.");
 	}
 
 	@Override
-	public PhysicalAttribute getAttribute(String arg0) throws JDMException {
+	public PhysicalAttribute getAttribute(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		throw new CDMException("getAttribute() not supported.");
 	}
@@ -174,33 +170,33 @@ public class CDMFilePhysicalDataSet extends CDMAbstractMiningObject implements
 	}
 
 	@Override
-	public Integer getAttributeIndex(String arg0) throws JDMException {
+	public Integer getAttributeIndex(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Collection getAttributeNames(AttributeDataType arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Collection getAttributeNames(PhysicalAttributeRole arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public AttributeStatisticsSet getAttributeStatistics() throws JDMException {
+	public AttributeStatisticsSet getAttributeStatistics() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Collection getAttributes() throws JDMException {
+	public Collection getAttributes() throws CDMException {
 		// TODO Auto-generated method stub
 		return attributes;
 	}
@@ -211,7 +207,7 @@ public class CDMFilePhysicalDataSet extends CDMAbstractMiningObject implements
 	}
 
 	@Override
-	public void importMetaData() throws JDMException {
+	public void importMetaData() throws CDMException {
 		// TODO Auto-generated method stub
 	}
 
@@ -221,7 +217,7 @@ public class CDMFilePhysicalDataSet extends CDMAbstractMiningObject implements
 	}
 
 	@Override
-	public void removeAttribute(String arg0) throws JDMException {
+	public void removeAttribute(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 	}
 }

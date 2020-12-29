@@ -1,10 +1,9 @@
 package pl.project.clusteringspringboot.datamining.task;
 
-import javax.datamining.ExecutionHandle;
-import javax.datamining.JDMException;
-import javax.datamining.NamedObject;
-import javax.datamining.VerificationReport;
-import javax.datamining.task.BuildTask;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.ExecutionHandle;
+import pl.project.clusteringspringboot.datamining.NamedObject;
+import pl.project.clusteringspringboot.datamining.VerificationReport;
 import java.util.Date;
 import java.util.Map;
 
@@ -16,7 +15,7 @@ public class CDMBuildTask implements BuildTask {
 	private String modelName;
 
 	@Override
-	public ExecutionHandle getExecutionHandle() throws JDMException {
+	public ExecutionHandle getExecutionHandle() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -64,7 +63,7 @@ public class CDMBuildTask implements BuildTask {
 	}
 
 	@Override
-	public void setDescription(String arg0) throws JDMException {
+	public void setDescription(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -127,24 +126,24 @@ public class CDMBuildTask implements BuildTask {
 	}
 
 	@Override
-	public void setBuildDataMap(Map arg0) throws JDMException {
+	public void setBuildDataMap(Map arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void setBuildDataName(String arg0) throws JDMException {
+	public void setBuildDataName(String arg0) throws CDMException {
 		buildDataName = arg0;
 
 	}
 
 	@Override
-	public void setBuildSettingsName(String arg0) throws JDMException {
+	public void setBuildSettingsName(String arg0) throws CDMException {
 		buildSettingsName = arg0;
 	}
 
 	@Override
-	public void setInputModelName(String arg0) throws JDMException {
+	public void setInputModelName(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -156,19 +155,19 @@ public class CDMBuildTask implements BuildTask {
 	}
 
 	@Override
-	public void setModelName(String arg0) throws JDMException {
+	public void setModelName(String arg0) throws CDMException {
 		modelName = arg0;
 
 	}
 
 	@Override
-	public void setValidationDataMap(Map arg0) throws JDMException {
+	public void setValidationDataMap(Map arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void setValidationDataName(String arg0) throws JDMException {
+	public void setValidationDataName(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}

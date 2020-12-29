@@ -4,21 +4,22 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.Locale;
 
-import javax.datamining.Enum;
-import javax.datamining.ExecutionHandle;
-import javax.datamining.ExecutionStatus;
-import javax.datamining.Factory;
-import javax.datamining.JDMException;
-import javax.datamining.MiningAlgorithm;
-import javax.datamining.MiningFunction;
-import javax.datamining.MiningObject;
-import javax.datamining.MiningTask;
-import javax.datamining.NamedObject;
-import javax.datamining.base.Task;
-import javax.datamining.resource.Connection;
-import javax.datamining.resource.ConnectionMetaData;
-import javax.datamining.resource.ConnectionSpec;
-import javax.datamining.resource.PersistenceOption;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.Enum;
+import pl.project.clusteringspringboot.datamining.ExecutionHandle;
+import pl.project.clusteringspringboot.datamining.ExecutionStatus;
+import pl.project.clusteringspringboot.datamining.Factory;
+import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
+import pl.project.clusteringspringboot.datamining.MiningFunction;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.MiningTask;
+import pl.project.clusteringspringboot.datamining.NamedObject;
+import pl.project.clusteringspringboot.datamining.base.Task;
+import pl.project.clusteringspringboot.datamining.resource.Connection;
+import pl.project.clusteringspringboot.datamining.resource.ConnectionMetaData;
+import pl.project.clusteringspringboot.datamining.resource.ConnectionSpec;
+import pl.project.clusteringspringboot.datamining.resource.PersistenceOption;
+
 
 /**
  * 
@@ -34,7 +35,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#close()
 	 */
 	@Override
-	public void close() throws JDMException {
+	public void close() throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -44,7 +45,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public boolean doesObjectExist(String arg0, NamedObject arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -53,7 +54,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#execute(java.lang.String)
 	 */
 	@Override
-	public ExecutionHandle execute(String arg0) throws JDMException {
+	public ExecutionHandle execute(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -62,7 +63,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#execute(javax.datamining.base.Task, java.lang.Long)
 	 */
 	@Override
-	public ExecutionStatus execute(Task arg0, Long arg1) throws JDMException {
+	public ExecutionStatus execute(Task arg0, Long arg1) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -81,7 +82,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public Date getCreationDate(String arg0, NamedObject arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -91,7 +92,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public String getDescription(String arg0, NamedObject arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -101,7 +102,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public ExecutionHandle[] getExecutionHandles(String arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -110,7 +111,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#getFactory(java.lang.String)
 	 */
 	@Override
-	public Factory getFactory(String arg0) throws JDMException {
+	public Factory getFactory(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -120,7 +121,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public ExecutionHandle getLastExecutionHandle(String arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -129,7 +130,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#getLoadedData()
 	 */
 	@Override
-	public String[] getLoadedData() throws JDMException {
+	public String[] getLoadedData() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -138,7 +139,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#getLoadedModels()
 	 */
 	@Override
-	public String[] getLoadedModels() throws JDMException {
+	public String[] getLoadedModels() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -174,7 +175,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#getMetaData()
 	 */
 	@Override
-	public ConnectionMetaData getMetaData() throws JDMException {
+	public ConnectionMetaData getMetaData() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -184,7 +185,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public Collection getModelNames(MiningFunction arg0, MiningAlgorithm arg1,
-			Date arg2, Date arg3) throws JDMException {
+			Date arg2, Date arg3) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -194,7 +195,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public NamedObject[] getNamedObjects(PersistenceOption arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -203,7 +204,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#getObjectNames(javax.datamining.NamedObject)
 	 */
 	@Override
-	public Collection getObjectNames(NamedObject arg0) throws JDMException {
+	public Collection getObjectNames(NamedObject arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -213,7 +214,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public Collection getObjectNames(Date arg0, Date arg1, NamedObject arg2)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -223,7 +224,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public Collection getObjectNames(Date arg0, Date arg1, NamedObject arg2,
-			Enum arg3) throws JDMException {
+			Enum arg3) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -233,7 +234,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public MiningAlgorithm[] getSupportedAlgorithms(MiningFunction arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -242,7 +243,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#getSupportedFunctions()
 	 */
 	@Override
-	public MiningFunction[] getSupportedFunctions() throws JDMException {
+	public MiningFunction[] getSupportedFunctions() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -251,7 +252,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#removeObject(java.lang.String, javax.datamining.NamedObject)
 	 */
 	@Override
-	public void removeObject(String arg0, NamedObject arg1) throws JDMException {
+	public void removeObject(String arg0, NamedObject arg1) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -261,7 +262,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public void renameObject(String arg0, String arg1, NamedObject arg2)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -270,7 +271,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#requestDataLoad(java.lang.String)
 	 */
 	@Override
-	public void requestDataLoad(String arg0) throws JDMException {
+	public void requestDataLoad(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -279,7 +280,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#requestDataUnload(java.lang.String)
 	 */
 	@Override
-	public void requestDataUnload(String arg0) throws JDMException {
+	public void requestDataUnload(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -288,7 +289,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#requestModelLoad(java.lang.String)
 	 */
 	@Override
-	public void requestModelLoad(String arg0) throws JDMException {
+	public void requestModelLoad(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -297,7 +298,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#requestModelUnload(java.lang.String)
 	 */
 	@Override
-	public void requestModelUnload(String arg0) throws JDMException {
+	public void requestModelUnload(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -307,7 +308,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public Collection retrieveModelObjects(MiningFunction arg0,
-			MiningAlgorithm arg1, Date arg2, Date arg3) throws JDMException {
+			MiningAlgorithm arg1, Date arg2, Date arg3) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -316,7 +317,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#retrieveObject(java.lang.String)
 	 */
 	@Override
-	public MiningObject retrieveObject(String arg0) throws JDMException {
+	public MiningObject retrieveObject(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -326,7 +327,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public MiningObject retrieveObject(String arg0, NamedObject arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -336,7 +337,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public Collection retrieveObjects(Date arg0, Date arg1, NamedObject arg2)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -346,7 +347,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public Collection retrieveObjects(Date arg0, Date arg1, NamedObject arg2,
-			Enum arg3) throws JDMException {
+			Enum arg3) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -356,7 +357,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public void saveObject(String arg0, MiningObject arg1, boolean arg2)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -366,7 +367,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public void setDescription(String arg0, NamedObject arg1, String arg2)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -375,7 +376,7 @@ public class MyConnection implements Connection {
 	 * @see javax.datamining.resource.Connection#setLocale(java.util.Locale)
 	 */
 	@Override
-	public void setLocale(Locale arg0) throws JDMException {
+	public void setLocale(Locale arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -385,7 +386,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public boolean supportsCapability(NamedObject arg0, PersistenceOption arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -395,7 +396,7 @@ public class MyConnection implements Connection {
 	 */
 	@Override
 	public boolean supportsCapability(MiningFunction arg0,
-			MiningAlgorithm arg1, MiningTask arg2) throws JDMException {
+			MiningAlgorithm arg1, MiningTask arg2) throws CDMException {
 		// TODO Auto-generated method stub
 		return false;
 	}

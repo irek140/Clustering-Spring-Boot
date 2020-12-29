@@ -3,8 +3,9 @@
  */
 package pl.project.clusteringspringboot.datamining.base;
 
-import javax.datamining.JDMException;
-import javax.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+
 import java.util.Date;
 
 /**
@@ -45,7 +46,7 @@ public abstract class CDMAbstractMiningObject implements MiningObject {
 	}
 
 	@Override
-	public void setDescription(String description) throws JDMException {
+	public void setDescription(String description) throws CDMException {
 		this.description = description;
 	}
 

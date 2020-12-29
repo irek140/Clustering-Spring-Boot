@@ -1,6 +1,5 @@
 package pl.project.clusteringspringboot.datamining.resource;
 
-import javax.datamining.resource.ConnectionSpec;
 import java.util.Locale;
 
 

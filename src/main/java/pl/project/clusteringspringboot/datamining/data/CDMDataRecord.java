@@ -1,5 +1,6 @@
 package pl.project.clusteringspringboot.datamining.data;
 
+
 public class CDMDataRecord {
 	
 	

@@ -2,13 +2,10 @@ package pl.project.clusteringspringboot.datamining.resource;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import pl.project.clusteringspringboot.datamining.CDMErrorCodes;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.resource.Connection;
 
-import javax.datamining.JDMErrorCodes;
-import javax.datamining.JDMException;
-import javax.datamining.resource.Connection;
-import javax.datamining.resource.ConnectionCapability;
-import javax.datamining.resource.ConnectionFactory;
-import javax.datamining.resource.ConnectionSpec;
 import java.io.File;
 import java.util.HashMap;
 
@@ -19,12 +16,12 @@ public class CDMFileConnectionFactory implements ConnectionFactory {
 	protected final static Logger log = LogManager.getLogger(CDMFileConnectionFactory.class.getSimpleName());
 
 	@Override
-	public javax.datamining.resource.Connection getConnection() throws JDMException {
+	public Connection getConnection() throws CDMException {
 		return null;
 	}
 
 	@Override
-	public javax.datamining.resource.Connection getConnection(ConnectionSpec cs) throws JDMException {
+	public Connection getConnection(ConnectionSpec cs) throws CDMException {
 		CDMFileConnection fc = new CDMFileConnection(this, cs);
 
 		if (cs.getURI().contains("[CUSTOM]")) {
@@ -34,7 +31,7 @@ public class CDMFileConnectionFactory implements ConnectionFactory {
 			File f = new File(cs.getURI());
 
 			if (!f.exists() || f.isDirectory()) {
-				throw new JDMException(JDMErrorCodes.JDM_CONNECTION_FAILURE,
+				throw new CDMException(CDMErrorCodes.CONNECTION_FAILURE,
 						"File " + cs.getURI() + " does not exist!");
 			}
 		}
@@ -49,13 +46,13 @@ public class CDMFileConnectionFactory implements ConnectionFactory {
 
 	@Override
 	public boolean supportsCapability(ConnectionCapability arg0)
-			throws JDMException {
+			throws CDMException {
 		return false;
 	}
 
 	@Override
-	public Connection getConnection(javax.resource.cci.Connection arg0)
-			throws JDMException {
+	public Connection getConnection(Connection arg0)
+			throws CDMException {
 		return null;
 	}
 

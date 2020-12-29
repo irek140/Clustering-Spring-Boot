@@ -1,18 +1,19 @@
 package pl.project.clusteringspringboot.algorithms.KMeans;
 
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
+import pl.project.clusteringspringboot.clustering.CDMClusteringSettings;
 import pl.project.clusteringspringboot.clustering.model.IClusteringData;
 import pl.project.clusteringspringboot.clustering.old.ClusteringTimer;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
 import weka.clusterers.SimpleKMeans;
 import weka.core.Attribute;
 import weka.core.DenseInstance;
 import weka.core.Instance;
 import weka.core.Instances;
 
-import javax.datamining.JDMException;
-import javax.datamining.MiningObject;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.data.PhysicalDataSet;
 import java.util.ArrayList;
 
 /**
@@ -40,8 +41,8 @@ public class KMeansPpAlgorithm extends CDMBasicClusteringAlgorithm {
 	 * @param clusteringSettings
 	 * @param physicalDataSet
 	 */
-	public KMeansPpAlgorithm(ClusteringSettings clusteringSettings,
-                             PhysicalDataSet physicalDataSet) {
+	public KMeansPpAlgorithm(CDMClusteringSettings clusteringSettings,
+							 PhysicalDataSet physicalDataSet) {
 		super(clusteringSettings, physicalDataSet);
 
 		KMeansPpAlgorithmSettings kmas = (KMeansPpAlgorithmSettings) clusteringSettings.getAlgorithmSettings();
@@ -55,7 +56,7 @@ public class KMeansPpAlgorithm extends CDMBasicClusteringAlgorithm {
 		// get attributes
 		try {
 			attributes = physicalDataSet.getAttributes();
-		} catch (JDMException e) {
+		} catch (CDMException e) {
 			e.printStackTrace();
 		}
 	}

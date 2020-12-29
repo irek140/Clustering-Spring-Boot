@@ -1,5 +1,6 @@
 package pl.iidml;
 
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -13,27 +14,24 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 
-import javax.datamining.Enum;
-import javax.datamining.ExecutionHandle;
-import javax.datamining.ExecutionStatus;
-import javax.datamining.Factory;
-import javax.datamining.JDMException;
-import javax.datamining.MiningAlgorithm;
-import javax.datamining.MiningFunction;
-import javax.datamining.MiningObject;
-import javax.datamining.MiningTask;
-import javax.datamining.NamedObject;
-import javax.datamining.base.Task;
-import javax.datamining.clustering.Cluster;
-import javax.datamining.resource.Connection;
-import javax.datamining.resource.ConnectionCapability;
-import javax.datamining.resource.ConnectionFactory;
-import javax.datamining.resource.ConnectionMetaData;
-import javax.datamining.resource.ConnectionSpec;
-import javax.datamining.resource.PersistenceOption;
-import javax.datamining.task.BuildTask;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.data.PhysicalDataSet;
+import pl.project.clusteringspringboot.datamining.*;
+import pl.project.clusteringspringboot.datamining.Enum;
+import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
+import pl.project.clusteringspringboot.datamining.MiningFunction;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.MiningTask;
+import pl.project.clusteringspringboot.datamining.NamedObject;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
+import pl.project.clusteringspringboot.datamining.base.Task;
+import pl.project.clusteringspringboot.datamining.clustering.Cluster;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
+import pl.project.clusteringspringboot.datamining.resource.Connection;
+import pl.project.clusteringspringboot.datamining.resource.ConnectionCapability;
+import pl.project.clusteringspringboot.datamining.resource.ConnectionFactory;
+import pl.project.clusteringspringboot.datamining.resource.ConnectionMetaData;
+import pl.project.clusteringspringboot.datamining.resource.ConnectionSpec;
+import pl.project.clusteringspringboot.datamining.resource.PersistenceOption;
+import pl.project.clusteringspringboot.datamining.task.BuildTask;
 
 
 public class FileConnection implements Connection {
@@ -54,25 +52,25 @@ public class FileConnection implements Connection {
 	}
 
 	@Override
-	public void close() throws JDMException {
+	public void close() throws CDMException {
 		// TODO Auto-generated method stub
 	}
 
 	@Override
 	public boolean doesObjectExist(String arg0, NamedObject arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public ExecutionHandle execute(String arg0) throws JDMException {
+	public ExecutionHandle execute(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public ExecutionStatus execute(Task task, Long timeOut) throws JDMException {
+	public ExecutionStatus execute(Task task, Long timeOut) throws CDMException {
 		// TODO Auto-generated method stub
 		Cluster c;
 		
@@ -121,7 +119,7 @@ public class FileConnection implements Connection {
 
 	@Override
 	public Date getCreationDate(String arg0, NamedObject arg1)
-			throws JDMException {
+			throws CDMException {
 		Date date = null;
 	    Path p = Paths.get(connectionSpec.getURI());
 	    BasicFileAttributes view;
@@ -138,7 +136,7 @@ public class FileConnection implements Connection {
 
 	@Override
 	public String getDescription(String arg0, NamedObject arg1)
-			throws JDMException {
+			throws CDMException {
 		
 		return connectionSpec.getURI();
 		
@@ -146,32 +144,32 @@ public class FileConnection implements Connection {
 
 	@Override
 	public ExecutionHandle[] getExecutionHandles(String arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Factory getFactory(String arg0) throws JDMException {
+	public Factory getFactory(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return factory;
 	}
 
 	@Override
 	public ExecutionHandle getLastExecutionHandle(String arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String[] getLoadedData() throws JDMException {
+	public String[] getLoadedData() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String[] getLoadedModels() throws JDMException {
+	public String[] getLoadedModels() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -195,125 +193,125 @@ public class FileConnection implements Connection {
 	}
 
 	@Override
-	public ConnectionMetaData getMetaData() throws JDMException {
+	public ConnectionMetaData getMetaData() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Collection getModelNames(MiningFunction arg0, MiningAlgorithm arg1,
-			Date arg2, Date arg3) throws JDMException {
+			Date arg2, Date arg3) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public NamedObject[] getNamedObjects(PersistenceOption arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Collection getObjectNames(NamedObject arg0) throws JDMException {
+	public Collection getObjectNames(NamedObject arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Collection getObjectNames(Date arg0, Date arg1, NamedObject arg2)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Collection getObjectNames(Date arg0, Date arg1, NamedObject arg2,
-			Enum arg3) throws JDMException {
+			Enum arg3) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public MiningAlgorithm[] getSupportedAlgorithms(MiningFunction arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public MiningFunction[] getSupportedFunctions() throws JDMException {
+	public MiningFunction[] getSupportedFunctions() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void removeObject(String arg0, NamedObject arg1) throws JDMException {
+	public void removeObject(String arg0, NamedObject arg1) throws CDMException {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void renameObject(String arg0, String arg1, NamedObject arg2)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void requestDataLoad(String arg0) throws JDMException {
+	public void requestDataLoad(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void requestDataUnload(String arg0) throws JDMException {
+	public void requestDataUnload(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void requestModelLoad(String arg0) throws JDMException {
+	public void requestModelLoad(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void requestModelUnload(String arg0) throws JDMException {
+	public void requestModelUnload(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public Collection retrieveModelObjects(MiningFunction arg0,
-			MiningAlgorithm arg1, Date arg2, Date arg3) throws JDMException {
+			MiningAlgorithm arg1, Date arg2, Date arg3) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public MiningObject retrieveObject(String miningObjectName)
-			throws JDMException {
+			throws CDMException {
 		return miningObjects.get(miningObjectName);
 	}
 
 	@Override
 	public MiningObject retrieveObject(String arg0, NamedObject arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Collection retrieveObjects(Date arg0, Date arg1, NamedObject arg2)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Collection retrieveObjects(Date arg0, Date arg1, NamedObject arg2,
-			Enum arg3) throws JDMException {
+			Enum arg3) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -321,7 +319,7 @@ public class FileConnection implements Connection {
 	@Override
 	public void saveObject(String miningObjectName, MiningObject miningObject,
 			boolean overwrite)
-			throws JDMException {
+			throws CDMException {
 		
 		if (overwrite && miningObjects.containsKey(miningObjectName))
 		{
@@ -335,27 +333,27 @@ public class FileConnection implements Connection {
 
 	@Override
 	public void setDescription(String arg0, NamedObject arg1, String arg2)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void setLocale(Locale arg0) throws JDMException {
+	public void setLocale(Locale arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public boolean supportsCapability(NamedObject arg0, PersistenceOption arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean supportsCapability(MiningFunction arg0,
-			MiningAlgorithm arg1, MiningTask arg2) throws JDMException {
+			MiningAlgorithm arg1, MiningTask arg2) throws CDMException {
 		// TODO Auto-generated method stub
 		return false;
 	}

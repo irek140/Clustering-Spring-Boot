@@ -2,13 +2,14 @@ package pl.project.clusteringspringboot.algorithms.CNBC;
 
 import pl.project.clusteringspringboot.algorithms.common.PlotPanel;
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
+import pl.project.clusteringspringboot.clustering.CDMClusteringSettings;
 import pl.project.clusteringspringboot.clustering.model.IClusteringData;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
 import pl.project.clusteringspringboot.spatialindex.spatialindex.Point;
 import pl.util.Dump;
 
-import javax.datamining.MiningObject;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.data.PhysicalDataSet;
 import java.util.ArrayList;
 
 /**
@@ -26,7 +27,7 @@ public class CNBCAlgorithm extends CDMBasicClusteringAlgorithm {
 	 * @param clusteringSettings
 	 * @param physicalDataSet
 	 */
-	public CNBCAlgorithm(ClusteringSettings clusteringSettings, PhysicalDataSet physicalDataSet) {
+	public CNBCAlgorithm(CDMClusteringSettings clusteringSettings, PhysicalDataSet physicalDataSet) {
 		super(clusteringSettings, physicalDataSet);
 		
 		CNBCAlgorithmSettings cnas = (CNBCAlgorithmSettings) clusteringSettings.getAlgorithmSettings();

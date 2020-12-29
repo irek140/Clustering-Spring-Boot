@@ -28,3 +28,33 @@ NBC	k=10	413	2039		22
 C-NBC	k=10	492	2096	6		18
 C-NBC	k=10	545	1590	9		18
 C-NBC	k=10	259	1281	11		18
+C-NBC	k=10	813	1341	7		19
+C-NBC	k=10	44	39	2		1
+C-NBC	k=10	53	128	62		2
+k-Means	(k=8, mi=5)	240	581	
+k-Means	(k=8, mi=5)	16	6	
+NBC	k=8	57	341		2
+NBC	k=8	659	1928		32
+NBC	k=10	549	1996		22
+NBC	k=10	49	94		2
+DBSCAN	(Eps=6000.0, minPts=15)	62	73		1
+DBSCAN	(Eps=6000.0, minPts=15)	663	5847		1
+C-DBSCAN	(Eps=10.0, minPts=4)	499	2260	1108		8
+C-DBSCAN	(Eps=10.0, minPts=4)	553	2224	1017		6
+C-DBSCAN	(Eps=10.0, minPts=4)	509	2176	795		2
+C-DBSCAN	(Eps=10.0, minPts=4)	437	1718	964		5
+C-DBSCAN	(Eps=10.0, minPts=4)	455	2051	861		5
+DBSCAN	(Eps=10.0, minPts=4)	885	1331		5
+DBSCAN	(Eps=6000.0, minPts=15)	441	6001		1
+DBSCAN	(Eps=10.0, minPts=4)	431	1458		5
+DBSCAN	(Eps=10.0, minPts=4)	454	1583		5
+NBC	k=10	420	1866		22
+NBC	k=8	562	1298		32
+k-Means++	(k=8, mi=5)	27	192	
+k-Means	(k=8, mi=5)	17	34	
+C-NBC	k=10	613	1817	6		19
+C-NBC	k=10	1280	1554	8		18
+C-NBC	k=10	322	1922	6		19
+C-NBC	k=10	670	1789	7		19
+pi-Means	(k=4, mi=5)	15	10	
+pi-Means	(k=4, mi=5)	3998	84	

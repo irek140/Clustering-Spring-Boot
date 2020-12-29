@@ -1,8 +1,8 @@
 package pl.project.clusteringspringboot.datamining.resource;
 
 import pl.iidml.BasicMiningObject;
+import pl.project.clusteringspringboot.datamining.NamedObject;
 
-import javax.datamining.NamedObject;
 
 /**
  * Created by Piotr Lasek on 05.06.2017.

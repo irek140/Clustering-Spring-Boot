@@ -1,21 +1,21 @@
 package pl.iidml;
 
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
+import pl.project.clusteringspringboot.datamining.MiningFunction;
+import pl.project.clusteringspringboot.datamining.NamedObject;
+import pl.project.clusteringspringboot.datamining.base.BuildSettings;
+import pl.project.clusteringspringboot.datamining.base.ModelDetail;
+import pl.project.clusteringspringboot.datamining.clustering.Cluster;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringModel;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringModelProperty;
+import pl.project.clusteringspringboot.datamining.data.ModelSignature;
+import pl.project.clusteringspringboot.datamining.rule.Rule;
+import pl.project.clusteringspringboot.datamining.statistics.AttributeStatisticsSet;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
-
-import javax.datamining.JDMException;
-import javax.datamining.MiningAlgorithm;
-import javax.datamining.MiningFunction;
-import javax.datamining.NamedObject;
-import javax.datamining.base.BuildSettings;
-import javax.datamining.base.ModelDetail;
-import javax.datamining.clustering.Cluster;
-import javax.datamining.clustering.ClusteringModel;
-import javax.datamining.clustering.ClusteringModelProperty;
-import javax.datamining.data.ModelSignature;
-import javax.datamining.rule.Rule;
-import javax.datamining.statistics.AttributeStatisticsSet;
 
 public class MyClusteringModel implements ClusteringModel {
 
@@ -155,19 +155,19 @@ public class MyClusteringModel implements ClusteringModel {
 	}
 
 	@Override
-	public void setDescription(String arg0) throws JDMException {
+	public void setDescription(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public Cluster getCluster(int clusterIndex) throws JDMException {
+	public Cluster getCluster(int clusterIndex) throws CDMException {
 		
 		return clusters.get(clusterIndex);
 	}
 
 	@Override
-	public Collection<Cluster> getClusters() throws JDMException {
+	public Collection<Cluster> getClusters() throws CDMException {
 		
 		for (int i = 0; i < 10; i++)
 		{
@@ -179,7 +179,7 @@ public class MyClusteringModel implements ClusteringModel {
 	}
 
 	@Override
-	public Collection getLeafClusters() throws JDMException {
+	public Collection getLeafClusters() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -196,13 +196,13 @@ public class MyClusteringModel implements ClusteringModel {
 	}
 
 	@Override
-	public Collection getRootClusters() throws JDMException {
+	public Collection getRootClusters() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Collection getRules() throws JDMException {
+	public Collection getRules() throws CDMException {
 		// TODO Auto-generated method stub
 		Collection<Rule> rules = new ArrayList<Rule>();
 		
@@ -210,7 +210,7 @@ public class MyClusteringModel implements ClusteringModel {
 	}
 
 	@Override
-	public Double getSimilarity(int arg0, int arg1) throws JDMException {
+	public Double getSimilarity(int arg0, int arg1) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}

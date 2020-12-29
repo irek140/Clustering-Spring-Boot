@@ -1,12 +1,12 @@
 package pl.project.clusteringspringboot.clustering;
 
+import pl.project.clusteringspringboot.datamining.CDMException;
 import pl.project.clusteringspringboot.datamining.base.CDMAbstractModel;
+import pl.project.clusteringspringboot.datamining.clustering.Cluster;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringModel;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringModelProperty;
+import pl.project.clusteringspringboot.datamining.rule.Rule;
 
-import javax.datamining.JDMException;
-import javax.datamining.clustering.Cluster;
-import javax.datamining.clustering.ClusteringModel;
-import javax.datamining.clustering.ClusteringModelProperty;
-import javax.datamining.rule.Rule;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -17,15 +17,15 @@ public class CDMClusteringModel extends CDMAbstractModel implements ClusteringMo
 	ArrayList<Rule> rules = new ArrayList<Rule>();
 	
 	@Override
-	public Cluster getCluster(int clusterIndex) throws JDMException {
+	public Cluster getCluster(int clusterIndex) throws CDMException {
 		return clusters.get(clusterIndex);
 	}
 	@Override
-	public Collection getClusters() throws JDMException {
+	public Collection getClusters() throws CDMException {
 		return clusters;
 	}
 	@Override
-	public Collection getLeafClusters() throws JDMException {
+	public Collection getLeafClusters() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -40,16 +40,16 @@ public class CDMClusteringModel extends CDMAbstractModel implements ClusteringMo
 		return 0;
 	}
 	@Override
-	public Collection getRootClusters() throws JDMException {
+	public Collection getRootClusters() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 	@Override
-	public Collection getRules() throws JDMException {
+	public Collection getRules() throws CDMException {
 		return rules;
 	}
 	@Override
-	public Double getSimilarity(int arg0, int arg1) throws JDMException {
+	public Double getSimilarity(int arg0, int arg1) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}

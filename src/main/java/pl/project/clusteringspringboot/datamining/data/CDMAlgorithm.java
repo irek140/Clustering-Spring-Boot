@@ -1,6 +1,7 @@
 package pl.project.clusteringspringboot.datamining.data;
 
-import javax.datamining.MiningObject;
+
+import pl.project.clusteringspringboot.datamining.MiningObject;
 
 public interface CDMAlgorithm {
 

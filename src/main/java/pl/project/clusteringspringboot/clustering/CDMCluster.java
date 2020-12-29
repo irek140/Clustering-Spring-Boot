@@ -1,10 +1,11 @@
 package pl.project.clusteringspringboot.clustering;
 
-import javax.datamining.JDMException;
-import javax.datamining.clustering.Cluster;
-import javax.datamining.rule.Predicate;
-import javax.datamining.rule.Rule;
-import javax.datamining.statistics.AttributeStatisticsSet;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.clustering.Cluster;
+import pl.project.clusteringspringboot.datamining.rule.Rule;
+import pl.project.clusteringspringboot.datamining.rule.Predicate;
+import pl.project.clusteringspringboot.datamining.statistics.AttributeStatisticsSet;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -34,7 +35,7 @@ public class CDMCluster implements Cluster {
 	}
 
 	@Override
-	public Cluster[] getAncestors() throws JDMException {
+	public Cluster[] getAncestors() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -56,13 +57,13 @@ public class CDMCluster implements Cluster {
 	 */
 	@Override
 	public Double getCentroidCoordinate(String attributeName)
-			throws JDMException {
+			throws CDMException {
 		return centroidCoordinate.get(attributeName);
 	}
 
 	@Override
 	public Double getCentroidCoordinate(String attributeName, Object arg1)
-			throws JDMException {
+			throws CDMException {
 		return getCentroidCoordinate(attributeName);
 	}
 	
@@ -73,7 +74,7 @@ public class CDMCluster implements Cluster {
 	
 
 	@Override
-	public Cluster[] getChildren() throws JDMException {
+	public Cluster[] getChildren() throws CDMException {
 		// TODO Auto-generated method stub
 		return (Cluster[]) children.toArray();
 	}
@@ -114,7 +115,7 @@ public class CDMCluster implements Cluster {
 	}
 
 	@Override
-	public Cluster getParent() throws JDMException {
+	public Cluster getParent() throws CDMException {
 		return parent;
 	}
 	
@@ -134,7 +135,7 @@ public class CDMCluster implements Cluster {
 	}
 
 	@Override
-	public AttributeStatisticsSet getStatistics() throws JDMException {
+	public AttributeStatisticsSet getStatistics() throws CDMException {
 		return null;
 	}
 

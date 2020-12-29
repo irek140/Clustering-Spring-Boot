@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Configuration;
 import pl.util.Workspace;
 import pl.util.ClusteringSettingsU;
 
-import javax.swing.*;
 
 @Configuration
 public class BeansConfig {

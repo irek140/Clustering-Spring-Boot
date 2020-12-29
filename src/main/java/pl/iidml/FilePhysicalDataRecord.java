@@ -1,12 +1,13 @@
 package pl.iidml;
 
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.NamedObject;
+import pl.project.clusteringspringboot.datamining.data.PhysicalDataRecord;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Set;
 
-import javax.datamining.JDMException;
-import javax.datamining.NamedObject;
-import javax.datamining.data.PhysicalDataRecord;
 
 public class FilePhysicalDataRecord extends BasicMiningObject implements PhysicalDataRecord {
 
@@ -32,12 +33,12 @@ public class FilePhysicalDataRecord extends BasicMiningObject implements Physica
 	/**
 	 * 
 	 */
-	public Object getValue(String attributeName) throws JDMException {
+	public Object getValue(String attributeName) throws CDMException {
 		if (keyValueMap.containsKey(attributeName)){
 			return keyValueMap.get(attributeName);
 		}
 		else {
-			throw new JDMException(0, "Attribute " + attributeName + 
+			throw new CDMException(0, "Attribute " + attributeName +
 					" not found in FilePhysicalDataRecord.getClusterId(...)");
 		}
 	}
@@ -54,11 +55,11 @@ public class FilePhysicalDataRecord extends BasicMiningObject implements Physica
 	/**
 	 * 
 	 */
-	public void removeAttribute(String attributeName) throws JDMException {
+	public void removeAttribute(String attributeName) throws CDMException {
 		if (keyValueMap.containsKey(attributeName)){
 			keyValueMap.remove(attributeName);
 		} else {
-			throw new JDMException(0, "Attribute " + attributeName +
+			throw new CDMException(0, "Attribute " + attributeName +
 					" not found in FilePhysicalDataRecord.removeAttribute" +
 					"(...)");
 		}
@@ -85,7 +86,7 @@ public class FilePhysicalDataRecord extends BasicMiningObject implements Physica
 	 * value.
 	 */
 	public void setValue(String attributeName, Object value)
-			throws JDMException {
+			throws CDMException {
 		if (keyValueMap == null) {
 			keyValueMap = new HashMap<String, Object>();
 		}

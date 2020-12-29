@@ -3,7 +3,8 @@
  */
 package pl.iidml;
 
-import javax.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+
 import java.util.Date;
 
 /**

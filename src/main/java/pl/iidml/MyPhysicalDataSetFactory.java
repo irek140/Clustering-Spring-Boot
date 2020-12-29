@@ -1,9 +1,11 @@
 package pl.iidml;
 
-import javax.datamining.JDMException;
-import javax.datamining.data.PhysicalDataSet;
-import javax.datamining.data.PhysicalDataSetCapability;
-import javax.datamining.data.PhysicalDataSetFactory;
+
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
+import pl.project.clusteringspringboot.datamining.data.PhysicalDataSetCapability;
+import pl.project.clusteringspringboot.datamining.data.PhysicalDataSetFactory;
+
 
 /**
  * 
@@ -20,7 +22,7 @@ public class MyPhysicalDataSetFactory implements PhysicalDataSetFactory {
 	 */
 	@Override
 	public PhysicalDataSet create(String arg0, boolean arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -30,7 +32,7 @@ public class MyPhysicalDataSetFactory implements PhysicalDataSetFactory {
 	 */
 	@Override
 	public boolean supportsCapability(PhysicalDataSetCapability arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return false;
 	}

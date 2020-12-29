@@ -1,8 +1,9 @@
 package pl.project.clusteringspringboot.algorithms.KMeans.DM;
 
-import javax.datamining.MiningAlgorithm;
-import javax.datamining.VerificationReport;
-import javax.datamining.base.AlgorithmSettings;
+
+import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
+import pl.project.clusteringspringboot.datamining.VerificationReport;
+import pl.project.clusteringspringboot.datamining.base.AlgorithmSettings;
 
 public class DM_KMeansAlgorithmSettings implements AlgorithmSettings {
 

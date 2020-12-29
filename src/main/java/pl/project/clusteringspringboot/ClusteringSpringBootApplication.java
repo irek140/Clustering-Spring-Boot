@@ -6,23 +6,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import pl.project.clusteringspringboot.clustering.CDMClusteringSettingsFactory;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
+import pl.project.clusteringspringboot.datamining.base.AlgorithmSettings;
+import pl.project.clusteringspringboot.datamining.clustering.AggregationFunction;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
 import pl.project.clusteringspringboot.datamining.data.CDMFilePhysicalDataSetFactory;
 import pl.project.clusteringspringboot.datamining.resource.CDMFileConnectionFactory;
+import pl.project.clusteringspringboot.datamining.resource.Connection;
+import pl.project.clusteringspringboot.datamining.resource.ConnectionSpec;
+import pl.project.clusteringspringboot.datamining.task.BuildTask;
 import pl.project.clusteringspringboot.datamining.task.CDMBuildTaskFactory;
+import pl.project.clusteringspringboot.datamining.ExecutionStatus;
 import pl.util.ClusteringSettingsU;
 import pl.util.DataSet;
 import pl.util.Dump;
 import pl.util.Workspace;
-
-import javax.datamining.ExecutionStatus;
-import javax.datamining.JDMException;
-import javax.datamining.base.AlgorithmSettings;
-import javax.datamining.clustering.AggregationFunction;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.data.PhysicalDataSet;
-import javax.datamining.resource.Connection;
-import javax.datamining.resource.ConnectionSpec;
-import javax.datamining.task.BuildTask;
 import javax.swing.*;
 import java.util.Date;
 import java.util.HashMap;
@@ -36,9 +35,6 @@ public class ClusteringSpringBootApplication {
 
     private final static Logger log = LogManager.getLogger(ClusteringSpringBootApplication.class);
 
-    //Pliki do poprawienia, gdy dorobione zostaną poprawnie pozostałe algorytmy
-    //CDMFileConnection
-    //ClusteringSettingsU
 
     @Autowired
     private Workspace workspace;
@@ -62,26 +58,26 @@ public class ClusteringSpringBootApplication {
             if (args.length == 0) {
                 args = new String[]{
                         //-----Algorithms-----
-                        "algorithm=C-NBC",
+                        //"algorithm=C-NBC",
                         //"algorithm=k-Means",
                         //"algorithm=k-Means++",
                         //"algorithm=NBC",
                         //"algorithm=DBSCAN",
                         //"algorithm=C-DBSCAN",
-                        //"algorithm=pi-Means",
+                        "algorithm=pi-Means",
 
                         //-----Data Sets-----
-                        "data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\my-file-2d.txt",
+                        //"data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\my-file-2d.txt",
                         //"data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\Checkins.csv",
                         //"data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\CheckinsS.csv",
                         //"data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\iris.data-2",
-                        //"data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\experiment\\birch2.txt",
+                        "data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\experiment\\birch2.txt",
 
                         //-----Parameters-----
                         //C-NBC
                         //"parameters=k:10;ic:random_4"
                         //"parameters=k:10;dump;plot;close_plot;ic:random_4"
-                        "parameters=k:10;dump;plot;ic:random_4"
+                        //"parameters=k:10;dump;plot;ic:random_4"
                         //k-Means
                         //"parameters=k:8;maxIterations:5;deepest:15;depth:15;starting:12;dump"
                         //k-Means++
@@ -97,8 +93,8 @@ public class ClusteringSpringBootApplication {
                         //CDBSCAN
                         //"parameters=Eps:10;MinPts:4;d:4;ic:random_10;dump:yes"
                         //"parameters=Eps:10;MinPts:4;d:4;ic:random_10;dump:yes;plot:yes"
-
-
+                        //pi-Means
+                        "parameters=k:4;maxIterations:5;deepest:1;depth:1;starting:1;dump"
 
 
 
@@ -185,7 +181,7 @@ public class ClusteringSpringBootApplication {
             // -----------------------------------------------------------------
             log.info("Done.");
 
-        } catch (JDMException e) {
+        } catch (CDMException e) {
             e.printStackTrace();
         }
 

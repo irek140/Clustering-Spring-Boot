@@ -1,13 +1,20 @@
 package pl.project.clusteringspringboot.clustering;
 
-import javax.datamining.*;
-import javax.datamining.base.AlgorithmSettings;
-import javax.datamining.clustering.AggregationFunction;
-import javax.datamining.clustering.AttributeComparisonFunction;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.clustering.SimilarityMatrix;
-import javax.datamining.data.Interval;
-import javax.datamining.data.LogicalData;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.MiningFunction;
+import pl.project.clusteringspringboot.datamining.NamedObject;
+import pl.project.clusteringspringboot.datamining.base.AlgorithmSettings;
+import pl.project.clusteringspringboot.datamining.clustering.AggregationFunction;
+import pl.project.clusteringspringboot.datamining.clustering.AttributeComparisonFunction;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
+import pl.project.clusteringspringboot.datamining.clustering.SimilarityMatrix;
+import pl.project.clusteringspringboot.datamining.data.Interval;
+import pl.project.clusteringspringboot.datamining.data.LogicalData;
+import pl.project.clusteringspringboot.datamining.AttributeRetrievalType;
+import pl.project.clusteringspringboot.datamining.LogicalAttributeUsage;
+import pl.project.clusteringspringboot.datamining.OutlierTreatment;
+import pl.project.clusteringspringboot.datamining.VerificationReport;
+
 import java.util.Collection;
 import java.util.Date;
 
@@ -25,22 +32,9 @@ public class CDMClusteringSettings implements ClusteringSettings {
 	}
 
 	@Override
-	public String[] getAttributeNames(AttributeRetrievalType arg0) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public int getDesiredExecutionTimeInMinutes() {
 		// TODO Auto-generated method stub
 		return 0;
-	}
-
-	@Override
-	public Collection getLogicalAttributes(LogicalAttributeUsage arg0)
-			throws JDMException {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
@@ -62,26 +56,31 @@ public class CDMClusteringSettings implements ClusteringSettings {
 	}
 
 	@Override
-	public Interval getOutlierIdentification(String arg0) throws JDMException {
+	public Interval getOutlierIdentification(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public String[] getAttributeNames(AttributeRetrievalType var1) {
+		return new String[0];
 	}
 
 	@Override
 	public OutlierTreatment getOutlierTreatment(String arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public LogicalAttributeUsage getUsage(String arg0) throws JDMException {
+	public LogicalAttributeUsage getUsage(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public double getWeight(String arg0) throws JDMException {
+	public double getWeight(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -104,40 +103,45 @@ public class CDMClusteringSettings implements ClusteringSettings {
 	}
 
 	@Override
-	public void setLogicalDataName(String arg0) throws JDMException {
+	public void setLogicalDataName(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
+	public Collection getLogicalAttributes(LogicalAttributeUsage var1) throws CDMException {
+		return null;
+	}
+
+	@Override
 	public void setOutlierIdentification(String arg0, Interval arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void setOutlierTreatment(String arg0, OutlierTreatment arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void setUsage(String arg0, LogicalAttributeUsage arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void setWeight(String arg0, double arg1) throws JDMException {
+	public void setWeight(String arg0, double arg1) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void setWeightAttribute(String arg0) throws JDMException {
+	public void setWeightAttribute(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -185,7 +189,7 @@ public class CDMClusteringSettings implements ClusteringSettings {
 	}
 
 	@Override
-	public void setDescription(String arg0) throws JDMException {
+	public void setDescription(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -198,7 +202,7 @@ public class CDMClusteringSettings implements ClusteringSettings {
 
 	@Override
 	public AttributeComparisonFunction getAttributeComparisonFunction(
-			String arg0) throws JDMException {
+			String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -228,7 +232,7 @@ public class CDMClusteringSettings implements ClusteringSettings {
 
 	@Override
 	public SimilarityMatrix getSimilarityMatrix(String arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -241,7 +245,7 @@ public class CDMClusteringSettings implements ClusteringSettings {
 
 	@Override
 	public void setAttributeComparisonFunction(String arg0,
-			AttributeComparisonFunction arg1) throws JDMException {
+			AttributeComparisonFunction arg1) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -271,7 +275,7 @@ public class CDMClusteringSettings implements ClusteringSettings {
 
 	@Override
 	public void setSimilarityMatrix(String arg0, SimilarityMatrix arg1)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 
 	}

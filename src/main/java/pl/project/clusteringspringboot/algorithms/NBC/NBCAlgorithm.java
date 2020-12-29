@@ -2,12 +2,12 @@ package pl.project.clusteringspringboot.algorithms.NBC;
 
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
 import pl.project.clusteringspringboot.algorithms.common.PlotPanel;
+import pl.project.clusteringspringboot.clustering.CDMClusteringSettings;
 import pl.project.clusteringspringboot.clustering.model.IClusteringData;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
 import pl.util.Dump;
-
-import javax.datamining.MiningObject;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.data.PhysicalDataSet;
 
 /**
  *
@@ -23,7 +23,7 @@ public class NBCAlgorithm extends CDMBasicClusteringAlgorithm {
      * @param clusteringSettings
      * @param physicalDataSet
      */
-    public NBCAlgorithm(ClusteringSettings clusteringSettings, PhysicalDataSet physicalDataSet) {
+    public NBCAlgorithm(CDMClusteringSettings clusteringSettings, PhysicalDataSet physicalDataSet) {
         super(clusteringSettings, physicalDataSet);
 
         NBCAlgorithmSettings nas = (NBCAlgorithmSettings) clusteringSettings.getAlgorithmSettings();

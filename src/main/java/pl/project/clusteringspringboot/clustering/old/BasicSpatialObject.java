@@ -1,7 +1,6 @@
 package pl.project.clusteringspringboot.clustering.old;
 
 
-
 import pl.project.clusteringspringboot.clustering.model.ISpatialObject;
 
 import java.util.ArrayList;

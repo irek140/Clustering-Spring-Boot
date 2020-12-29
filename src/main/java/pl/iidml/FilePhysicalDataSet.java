@@ -1,16 +1,17 @@
 package pl.iidml;
 
+
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.NamedObject;
+import pl.project.clusteringspringboot.datamining.data.AttributeDataType;
+import pl.project.clusteringspringboot.datamining.data.PhysicalAttribute;
+import pl.project.clusteringspringboot.datamining.data.PhysicalAttributeRole;
+import pl.project.clusteringspringboot.datamining.data.PhysicalDataSet;
+import pl.project.clusteringspringboot.datamining.statistics.AttributeStatisticsSet;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
-
-import javax.datamining.JDMException;
-import javax.datamining.NamedObject;
-import javax.datamining.data.AttributeDataType;
-import javax.datamining.data.PhysicalAttribute;
-import javax.datamining.data.PhysicalAttributeRole;
-import javax.datamining.data.PhysicalDataSet;
-import javax.datamining.statistics.AttributeStatisticsSet;
 
 
 public class FilePhysicalDataSet implements PhysicalDataSet {
@@ -54,25 +55,25 @@ public class FilePhysicalDataSet implements PhysicalDataSet {
 	}
 
 	@Override
-	public void setDescription(String arg0) throws JDMException {
+	public void setDescription(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void addAttribute(PhysicalAttribute arg0) throws JDMException {
+	public void addAttribute(PhysicalAttribute arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void addAttributes(PhysicalAttribute[] arg0) throws JDMException {
+	public void addAttributes(PhysicalAttribute[] arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public PhysicalAttribute getAttribute(String arg0) throws JDMException {
+	public PhysicalAttribute getAttribute(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		PhysicalAttribute pa;
 		
@@ -92,33 +93,33 @@ public class FilePhysicalDataSet implements PhysicalDataSet {
 	}
 
 	@Override
-	public Integer getAttributeIndex(String arg0) throws JDMException {
+	public Integer getAttributeIndex(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Collection getAttributeNames(AttributeDataType arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Collection getAttributeNames(PhysicalAttributeRole arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public AttributeStatisticsSet getAttributeStatistics() throws JDMException {
+	public AttributeStatisticsSet getAttributeStatistics() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Collection getAttributes() throws JDMException {
+	public Collection getAttributes() throws CDMException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -130,7 +131,7 @@ public class FilePhysicalDataSet implements PhysicalDataSet {
 	}
 
 	@Override
-	public void importMetaData() throws JDMException {
+	public void importMetaData() throws CDMException {
 		// TODO Auto-generated method stub
 
 	}
@@ -142,7 +143,7 @@ public class FilePhysicalDataSet implements PhysicalDataSet {
 	}
 
 	@Override
-	public void removeAttribute(String arg0) throws JDMException {
+	public void removeAttribute(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 
 	}

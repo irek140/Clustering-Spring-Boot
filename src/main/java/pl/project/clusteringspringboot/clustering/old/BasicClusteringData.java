@@ -1,7 +1,6 @@
 package pl.project.clusteringspringboot.clustering.old;
 
 
-
 import pl.project.clusteringspringboot.clustering.model.IClusteringData;
 import pl.project.clusteringspringboot.clustering.model.IClusteringObject;
 

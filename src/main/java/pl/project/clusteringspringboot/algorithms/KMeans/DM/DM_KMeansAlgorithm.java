@@ -2,14 +2,15 @@ package pl.project.clusteringspringboot.algorithms.KMeans.DM;
 
 import pl.project.clusteringspringboot.clustering.CDMCluster;
 import pl.project.clusteringspringboot.clustering.CDMClusteringModel;
+import pl.project.clusteringspringboot.clustering.CDMClusteringSettings;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
+import pl.project.clusteringspringboot.datamining.data.PhysicalAttribute;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
 import pl.project.clusteringspringboot.datamining.base.ScatterAdd;
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
 
-import javax.datamining.JDMException;
-import javax.datamining.MiningObject;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.data.PhysicalAttribute;
-import javax.datamining.data.PhysicalDataSet;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -26,8 +27,8 @@ public class DM_KMeansAlgorithm extends CDMBasicClusteringAlgorithm {
 	int maxRuns = 4;
 	int[] clusterCount;
 	
-	public DM_KMeansAlgorithm(ClusteringSettings clusteringSettings,
-                              PhysicalDataSet physicalDataSet)
+	public DM_KMeansAlgorithm(CDMClusteringSettings clusteringSettings,
+							  PhysicalDataSet physicalDataSet)
 	{
 		super(clusteringSettings, physicalDataSet);
 		
@@ -38,7 +39,7 @@ public class DM_KMeansAlgorithm extends CDMBasicClusteringAlgorithm {
 		
 		try {
 			attributes = physicalDataSet.getAttributes();
-		} catch (JDMException e) {
+		} catch (CDMException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

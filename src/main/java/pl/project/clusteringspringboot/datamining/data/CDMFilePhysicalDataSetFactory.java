@@ -1,10 +1,7 @@
 package pl.project.clusteringspringboot.datamining.data;
 
-import javax.datamining.JDMException;
-import javax.datamining.data.PhysicalDataSet;
-import javax.datamining.data.PhysicalDataSetCapability;
-import javax.datamining.data.PhysicalDataSetFactory;
-
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
 
 /**
  * @author Piotr Lasek
@@ -19,7 +16,7 @@ public class CDMFilePhysicalDataSetFactory implements PhysicalDataSetFactory {
 	 */
 	@Override
 	public PhysicalDataSet create(String uri, boolean arg1)
-			throws JDMException {
+			throws CDMException {
 		CDMFilePhysicalDataSet fpds = new CDMFilePhysicalDataSet();
 		fpds.setDescription(uri);
 		return fpds;
@@ -30,7 +27,7 @@ public class CDMFilePhysicalDataSetFactory implements PhysicalDataSetFactory {
 	 */
 	@Override
 	public boolean supportsCapability(PhysicalDataSetCapability arg0)
-			throws JDMException {
+			throws CDMException {
 		// TODO Auto-generated method stub
 		return false;
 	}

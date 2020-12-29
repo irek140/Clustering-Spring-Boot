@@ -1,7 +1,8 @@
 package pl.iidml;
 
+import pl.project.clusteringspringboot.datamining.resource.ConnectionSpec;
+
 import java.util.Locale;
-import javax.datamining.resource.ConnectionSpec;
 
 
 public class FileConnectionSpec implements ConnectionSpec {

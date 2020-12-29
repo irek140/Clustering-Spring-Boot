@@ -2,12 +2,209 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98a29bfa-2e09-4f5e-934c-006d7c747c00" name="Default Changelist" comment="after NBC and DBSCAN">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiKMeansAlgorithmSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/AttributeRetrievalType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/CDMErrorCodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/Enum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/ExecutionHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/ExecutionState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/ExecutionStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/LogicalAttributeUsage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/MiningAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/MiningFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/MiningObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/MiningTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/NamedObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/OutlierTreatment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/PhysicalDataSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/ReportType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/SortOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/VerificationReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/base/AlgorithmSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/base/BuildSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/base/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/base/ModelDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/base/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/clustering/AggregationFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/clustering/AttributeComparisonFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/clustering/Cluster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/clustering/ClusteringCapability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/clustering/ClusteringModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/clustering/ClusteringModelProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/clustering/ClusteringSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/clustering/ClusteringSettingsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/clustering/SimilarityMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/Attribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/AttributeDataType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/AttributeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CategoryMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CategoryProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CategorySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/DataPreparationStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/Interval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/IntervalClosure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/LogicalAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/LogicalData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/ModelSignature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/PhysicalAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/PhysicalAttributeCapability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/PhysicalAttributeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/PhysicalAttributeRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/PhysicalDataRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/PhysicalDataSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/PhysicalDataSetCapability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/PhysicalDataSetFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/SignatureAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/ConnectionCapability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/ConnectionMetaData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/ConnectionSpec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/PersistenceOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/rule/Predicate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/rule/Rule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/rule/RuleTranslationFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/statistics/AttributeStatisticsSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/statistics/AttributeStatisticsSetCapability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/statistics/ContinuousStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/statistics/DiscreteStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/statistics/NumericalStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/statistics/UnivariateStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/task/BuildTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/task/BuildTaskCapability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/task/BuildTaskFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/CheckinsS_C-NBC_(k=10) (clusters=1).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/CheckinsS_C-NBC_(k=10) (clusters=1).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_C-DBSCAN_(Eps=10.0, minPts=4) (clusters=2).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_C-DBSCAN_(Eps=10.0, minPts=4) (clusters=2).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_C-DBSCAN_(Eps=10.0, minPts=4) (clusters=5).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_C-DBSCAN_(Eps=10.0, minPts=4) (clusters=5).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_C-DBSCAN_(Eps=10.0, minPts=4) (clusters=6).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_C-DBSCAN_(Eps=10.0, minPts=4) (clusters=6).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_C-NBC_(k=10) (clusters=18).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_C-NBC_(k=10) (clusters=18).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_C-NBC_(k=10) (clusters=18).png" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_C-NBC_(k=10) (clusters=18).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_C-NBC_(k=10) (clusters=19).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_C-NBC_(k=10) (clusters=19).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_DBSCAN_(Eps=10.0, minPts=4) (clusters=5).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_DBSCAN_(Eps=10.0, minPts=4) (clusters=5).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_DBSCAN_(Eps=10.0, minPts=4) (clusters=5).png" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_DBSCAN_(Eps=10.0, minPts=4) (clusters=5).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_DBSCAN_(Eps=6000.0, minPts=15) (clusters=1).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_DBSCAN_(Eps=6000.0, minPts=15) (clusters=1).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_NBC_(k=10) (clusters=22).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_NBC_(k=10) (clusters=22).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_NBC_(k=10) (clusters=22).png" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_NBC_(k=10) (clusters=22).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_NBC_(k=8) (clusters=32).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_NBC_(k=8) (clusters=32).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/times.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/times.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/BasicMiningObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/BasicMiningObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/FileConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/FileConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/FileConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/FileConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/FileConnectionSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/FileConnectionSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/FilePhysicalDataRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/FilePhysicalDataRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/FilePhysicalDataSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/FilePhysicalDataSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/MyBuildTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/MyBuildTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/MyBuildTaskFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/MyBuildTaskFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/MyCluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/MyCluster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/MyClusteringModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/MyClusteringModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/MyClusteringSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/MyClusteringSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/MyClusteringSettingsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/MyClusteringSettingsFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/MyConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/MyConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/iidml/MyPhysicalDataSetFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/iidml/MyPhysicalDataSetFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CDBSCAN/CDBSCANAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CDBSCAN/CDBSCANAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CDBSCAN/CDBSCANAlgorithmSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CDBSCAN/CDBSCANAlgorithmSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithmSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithmSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/DBSCAN/DBSCANAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/DBSCAN/DBSCANAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/DBSCAN/DBSCANAlgorithmSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/DBSCAN/DBSCANAlgorithmSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/DM/DM_KMeansAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/DM/DM_KMeansAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/DM/DM_KMeansAlgorithmSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/DM/DM_KMeansAlgorithmSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/KMeansAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/KMeansAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/KMeansAlgorithmSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/KMeansAlgorithmSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/KMeansPpAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/KMeansPpAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/KMeansPpAlgorithmSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/KMeans/KMeansPpAlgorithmSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithmSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithmSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiKMeansAlgorithmSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiKMeansAlgorithmSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/NBC/NBCRTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/common/ColorUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/common/MyVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithmSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithmSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/CDMBasicClusteringAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/CDMBasicClusteringAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/CDMCluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/CDMCluster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/CDMClusteringModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/CDMClusteringModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/CDMClusteringSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/CDMClusteringSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/CDMClusteringSettingsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/CDMClusteringSettingsFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/BasicClusteringData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/BasicClusteringData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/BasicSpatialObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/clustering/old/BasicSpatialObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/CDMException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/CDMException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/base/CDMAbstractMiningObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/base/CDMAbstractMiningObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/base/CDMAbstractModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/base/CDMAbstractModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CDMAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CDMAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CDMDataRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CDMDataRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CDMFilePhysicalDataSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CDMFilePhysicalDataSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CDMFilePhysicalDataSetFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CDMFilePhysicalDataSetFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CDMPhysicalAttributeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/data/CDMPhysicalAttributeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMBasicMiningObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMBasicMiningObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMExecutionStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMExecutionStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMFileConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMFileConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMFileConnectionSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/resource/CDMFileConnectionSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/task/CDMBuildTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/task/CDMBuildTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/task/CDMBuildTaskFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/datamining/task/CDMBuildTaskFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/util/ClusteringSettingsU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/util/ClusteringSettingsU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/util/DataSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/util/DataSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/util/Workspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/util/Workspace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/BasicMiningObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/BasicMiningObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/FileConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/FileConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/FileConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/FileConnectionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/FileConnectionSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/FileConnectionSpec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/FilePhysicalDataRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/FilePhysicalDataRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/FilePhysicalDataSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/FilePhysicalDataSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/MyBuildTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/MyBuildTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/MyBuildTaskFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/MyBuildTaskFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/MyCluster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/MyCluster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/MyClusteringModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/MyClusteringModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/MyClusteringSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/MyClusteringSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/MyClusteringSettingsFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/MyClusteringSettingsFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/MyConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/MyConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/iidml/MyPhysicalDataSetFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/iidml/MyPhysicalDataSetFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/BeansConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/BeansConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/ClusteringSpringBootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/ClusteringSpringBootApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/CDBSCAN/CDBSCANAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/CDBSCAN/CDBSCANAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/CDBSCAN/CDBSCANAlgorithmSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/CDBSCAN/CDBSCANAlgorithmSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithmSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/CNBC/CNBCAlgorithmSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/DBSCAN/DBSCANAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/DBSCAN/DBSCANAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/DBSCAN/DBSCANAlgorithmSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/DBSCAN/DBSCANAlgorithmSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/DM/DM_KMeansAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/DM/DM_KMeansAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/DM/DM_KMeansAlgorithmSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/DM/DM_KMeansAlgorithmSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/KMeansAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/KMeansAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/KMeansAlgorithmSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/KMeansAlgorithmSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/KMeansPpAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/KMeansPpAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/KMeansPpAlgorithmSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/KMeans/KMeansPpAlgorithmSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithmSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/NBC/NBCAlgorithmSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/PiMeans/PiKMeansAlgorithmSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/PiMeans/PiKMeansAlgorithmSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithm$BoundManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithm$BoundManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithmSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/algorithms/PiMeans/PiMeansAlgorithmSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/CDMBasicClusteringAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/CDMBasicClusteringAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/CDMCluster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/CDMCluster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/CDMClusteringModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/CDMClusteringModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/CDMClusteringSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/CDMClusteringSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/CDMClusteringSettingsFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/CDMClusteringSettingsFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/old/BasicClusteringData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/old/BasicClusteringData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/old/BasicSpatialObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/clustering/old/BasicSpatialObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/CDMException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/CDMException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/base/CDMAbstractMiningObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/base/CDMAbstractMiningObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/base/CDMAbstractModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/base/CDMAbstractModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/data/CDMAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/data/CDMAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/data/CDMDataRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/data/CDMDataRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/data/CDMFilePhysicalDataSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/data/CDMFilePhysicalDataSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/data/CDMFilePhysicalDataSetFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/data/CDMFilePhysicalDataSetFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/data/CDMPhysicalAttributeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/data/CDMPhysicalAttributeFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMBasicMiningObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMBasicMiningObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMExecutionStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMExecutionStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMFileConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMFileConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMFileConnectionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMFileConnectionSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/resource/CDMFileConnectionSpec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/task/CDMBuildTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/task/CDMBuildTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/task/CDMBuildTaskFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/datamining/task/CDMBuildTaskFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/util/ClusteringSettingsU.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/util/ClusteringSettingsU.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/util/DataSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/util/DataSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/util/Workspace.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/util/Workspace.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +218,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -56,26 +253,27 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Studia Magisterskie/Semestr II/Badawczy Projekt Zespołowy/clustering-master/clustering-master" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36206895" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="spatialindex" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot\algorithms\CDBSCAN" />
+      <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.project.clusteringspringboot.datamining" />
       <recent name="pl.project.clusteringspringboot.algorithms.PiMeans" />
       <recent name="pl.util" />
       <recent name="pl.project.clusteringspringboot.datamining.data" />
       <recent name="pl.project.clusteringspringboot.datamining.task" />
-      <recent name="pl.project.clusteringspringboot.clustering" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot\algorithms\CDBSCAN" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\clustering-spring-boot\src\main\java\pl\project\clusteringspringboot" />
     </key>
   </component>
@@ -133,6 +331,8 @@
       <workItem from="1607945824078" duration="6581000" />
       <workItem from="1608377329926" duration="4527000" />
       <workItem from="1608734092231" duration="617000" />
+      <workItem from="1609174650839" duration="16612000" />
+      <workItem from="1609239291573" duration="9934000" />
     </task>
     <task id="LOCAL-00001" summary="create logger">
       <created>1605522073302</created>

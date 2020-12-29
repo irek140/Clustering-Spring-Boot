@@ -2,11 +2,11 @@ package pl.project.clusteringspringboot.algorithms.CNBC;
 
 
 import pl.project.clusteringspringboot.clustering.CDMBaseAlgorithmSettings;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
+import pl.project.clusteringspringboot.datamining.VerificationReport;
+import pl.project.clusteringspringboot.datamining.base.AlgorithmSettings;
 
-import javax.datamining.JDMException;
-import javax.datamining.MiningAlgorithm;
-import javax.datamining.VerificationReport;
-import javax.datamining.base.AlgorithmSettings;
 
 /**
  * 
@@ -22,7 +22,7 @@ public class CNBCAlgorithmSettings extends CDMBaseAlgorithmSettings implements A
 	static {
 		try {
 			MiningAlgorithm.addExtension(NAME);
-		} catch (JDMException e) {
+		} catch (CDMException e) {
 			e.printStackTrace();
 		}
 	}
@@ -57,7 +57,7 @@ public class CNBCAlgorithmSettings extends CDMBaseAlgorithmSettings implements A
 	public MiningAlgorithm getMiningAlgorithm() {
 		try {
 			return MiningAlgorithm.valueOf(NAME);
-		} catch (JDMException e) {
+		} catch (CDMException e) {
 			e.printStackTrace();
 		}
 		return null;

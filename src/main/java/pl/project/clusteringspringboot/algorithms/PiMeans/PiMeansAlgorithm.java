@@ -3,15 +3,16 @@ package pl.project.clusteringspringboot.algorithms.PiMeans;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
+import pl.project.clusteringspringboot.clustering.CDMClusteringSettings;
 import pl.project.clusteringspringboot.clustering.model.IClusteringData;
 import pl.project.clusteringspringboot.clustering.old.ClusteringTimer;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
 import pl.project.clusteringspringboot.datamining.data.CDMFilePhysicalDataSet;
+import pl.project.clusteringspringboot.datamining.data.PhysicalAttribute;
 import pl.util.Dump;
 
-import javax.datamining.MiningObject;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.data.PhysicalAttribute;
-import javax.datamining.data.PhysicalDataSet;
 import java.io.IOException;
 import java.util.*;
 
@@ -38,7 +39,7 @@ public class PiMeansAlgorithm extends CDMBasicClusteringAlgorithm {
     /**
      * @throws IOException
      */
-    public PiMeansAlgorithm(ClusteringSettings clusteringSettings,
+    public PiMeansAlgorithm(CDMClusteringSettings clusteringSettings,
                             PhysicalDataSet physicalDataSet) {
         super(clusteringSettings, physicalDataSet);
 

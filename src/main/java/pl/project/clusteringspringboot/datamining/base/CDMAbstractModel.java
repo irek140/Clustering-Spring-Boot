@@ -1,14 +1,12 @@
 package pl.project.clusteringspringboot.datamining.base;
 
-import javax.datamining.JDMException;
-import javax.datamining.MiningAlgorithm;
-import javax.datamining.MiningFunction;
-import javax.datamining.NamedObject;
-import javax.datamining.base.BuildSettings;
-import javax.datamining.base.Model;
-import javax.datamining.base.ModelDetail;
-import javax.datamining.data.ModelSignature;
-import javax.datamining.statistics.AttributeStatisticsSet;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.MiningAlgorithm;
+import pl.project.clusteringspringboot.datamining.MiningFunction;
+import pl.project.clusteringspringboot.datamining.NamedObject;
+import pl.project.clusteringspringboot.datamining.data.ModelSignature;
+import pl.project.clusteringspringboot.datamining.statistics.AttributeStatisticsSet;
+
 import java.util.Date;
 
 public abstract class CDMAbstractModel implements Model {
@@ -50,7 +48,7 @@ public abstract class CDMAbstractModel implements Model {
 	}
 
 	@Override
-	public void setDescription(String arg0) throws JDMException {
+	public void setDescription(String arg0) throws CDMException {
 		// TODO Auto-generated method stub
 		
 	}

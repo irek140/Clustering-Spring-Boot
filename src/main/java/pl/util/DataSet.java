@@ -2,14 +2,14 @@ package pl.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
+import pl.project.clusteringspringboot.datamining.data.AttributeDataType;
 import pl.project.clusteringspringboot.datamining.data.CDMFilePhysicalDataSetFactory;
 import pl.project.clusteringspringboot.datamining.data.CDMPhysicalAttributeFactory;
+import pl.project.clusteringspringboot.datamining.data.PhysicalAttribute;
+import pl.project.clusteringspringboot.datamining.resource.ConnectionSpec;
 
-import javax.datamining.JDMException;
-import javax.datamining.data.AttributeDataType;
-import javax.datamining.data.PhysicalAttribute;
-import javax.datamining.data.PhysicalDataSet;
-import javax.datamining.resource.ConnectionSpec;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -26,10 +26,10 @@ public class DataSet {
      * @param pdsf
      * @param cs
      * @return
-     * @throws JDMException
+     * @throws CDMException
      */
     public static PhysicalDataSet setAttributes(
-            CDMFilePhysicalDataSetFactory pdsf, ConnectionSpec cs) throws JDMException {
+            CDMFilePhysicalDataSetFactory pdsf, ConnectionSpec cs) throws CDMException {
 
 
         PhysicalDataSet fpds;

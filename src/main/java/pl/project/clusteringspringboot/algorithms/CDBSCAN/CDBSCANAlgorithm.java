@@ -5,13 +5,14 @@ import org.apache.logging.log4j.Logger;
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
 import pl.project.clusteringspringboot.algorithms.CNBC.InstanceConstraints;
 import pl.project.clusteringspringboot.algorithms.common.PlotPanel;
+import pl.project.clusteringspringboot.clustering.CDMClusteringSettings;
 import pl.project.clusteringspringboot.clustering.model.IClusteringData;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
 import pl.project.clusteringspringboot.spatialindex.spatialindex.Point;
 import pl.util.Dump;
 
-import javax.datamining.MiningObject;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.data.PhysicalDataSet;
 import java.util.ArrayList;
 
 /**
@@ -32,7 +33,7 @@ public class CDBSCANAlgorithm extends CDMBasicClusteringAlgorithm {
      * @param clusteringSettings
      * @param physicalDataSet
      */
-    public CDBSCANAlgorithm(ClusteringSettings clusteringSettings, PhysicalDataSet physicalDataSet) {
+    public CDBSCANAlgorithm(CDMClusteringSettings clusteringSettings, PhysicalDataSet physicalDataSet) {
         super(clusteringSettings, physicalDataSet);
 
         CDBSCANAlgorithmSettings cdas = (CDBSCANAlgorithmSettings) clusteringSettings.getAlgorithmSettings();

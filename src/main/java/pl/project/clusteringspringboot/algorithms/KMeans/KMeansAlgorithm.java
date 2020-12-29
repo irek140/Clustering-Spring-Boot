@@ -1,13 +1,14 @@
 package pl.project.clusteringspringboot.algorithms.KMeans;
 
 import pl.project.clusteringspringboot.clustering.CDMBasicClusteringAlgorithm;
+import pl.project.clusteringspringboot.clustering.CDMClusteringSettings;
 import pl.project.clusteringspringboot.clustering.old.ClusteringTimer;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.clustering.ClusteringSettings;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
 import pl.project.clusteringspringboot.datamining.base.ScatterAdd;
 
-import javax.datamining.JDMException;
-import javax.datamining.MiningObject;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.data.PhysicalDataSet;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -37,7 +38,7 @@ public class KMeansAlgorithm extends CDMBasicClusteringAlgorithm {
      * @param clusteringSettings
      * @param physicalDataSet
      */
-    public KMeansAlgorithm(ClusteringSettings clusteringSettings,
+    public KMeansAlgorithm(CDMClusteringSettings clusteringSettings,
                            PhysicalDataSet physicalDataSet) {
         super(clusteringSettings, physicalDataSet);
         KMeansAlgorithmSettings kmas = (KMeansAlgorithmSettings) clusteringSettings.getAlgorithmSettings();
@@ -52,7 +53,7 @@ public class KMeansAlgorithm extends CDMBasicClusteringAlgorithm {
         // get attributes
         try {
             attributes = physicalDataSet.getAttributes();
-        } catch (JDMException e) {
+        } catch (CDMException e) {
             e.printStackTrace();
         }
     }

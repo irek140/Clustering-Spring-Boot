@@ -1,27 +1,19 @@
 package pl.util;
 
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import pl.project.clusteringspringboot.algorithms.CDBSCAN.CDBSCANAlgorithmSettings;
 import pl.project.clusteringspringboot.algorithms.CNBC.CNBCAlgorithmSettings;
 import pl.project.clusteringspringboot.algorithms.DBSCAN.DBSCANAlgorithmSettings;
 import pl.project.clusteringspringboot.algorithms.NBC.NBCAlgorithmSettings;
+import pl.project.clusteringspringboot.algorithms.PiMeans.PiMeansAlgorithmSettings;
 import pl.project.clusteringspringboot.clustering.CDMBaseAlgorithmSettings;
-//import org.dmtools.clustering.algorithm.CDBSCAN.CDBSCANAlgorithmSettings;
-//import org.dmtools.clustering.algorithm.DBSCAN.DBSCANAlgorithmSettings;
-//import org.dmtools.clustering.algorithm.DBSCAN.DbScanNetTrafficAlgorithmSettings;
-//import org.dmtools.clustering.algorithm.DBSCAN.DbScanSlicerAlgorithmSettings;
-
 import pl.project.clusteringspringboot.algorithms.KMeans.DM.DM_KMeansAlgorithmSettings;
 import pl.project.clusteringspringboot.algorithms.KMeans.KMeansAlgorithmSettings;
 import pl.project.clusteringspringboot.algorithms.KMeans.KMeansPpAlgorithmSettings;
+import pl.project.clusteringspringboot.datamining.base.AlgorithmSettings;
 
-//import org.dmtools.clustering.algorithm.NBC.DM.NBCDMAlgorithmSettings;
-//import org.dmtools.clustering.algorithm.NBC.NBCAlgorithmSettings;
-//import org.dmtools.clustering.algorithm.PiMeans.PiMeansAlgorithmSettings;
-//import org.dmtools.clustering.algorithm.piKMeans.PiKMeansAlgorithmSettings;
-
-import javax.datamining.base.AlgorithmSettings;
 import java.util.HashMap;
 
 /**
@@ -41,7 +33,6 @@ public class ClusteringSettingsU {
         AlgorithmSettings algorithmSettings = null;
 
 
-        //Do poprawy, gdy będą dobrze dorobione pozostałe algorytmy
         switch (algorithm) {
             case KMeansAlgorithmSettings.NAME:
                 algorithmSettings = new KMeansAlgorithmSettings();
@@ -90,96 +81,23 @@ public class ClusteringSettingsU {
                 ((CDBSCANAlgorithmSettings) algorithmSettings).setIC(icCDB);
                 ((CDBSCANAlgorithmSettings) algorithmSettings).setDelta(deltaCDB);
                 break;
+            case PiMeansAlgorithmSettings.NAME: {
+                algorithmSettings = new PiMeansAlgorithmSettings();
+                int pk = new Integer(parameters.get("k"));
+                int pmaxIterations = new Integer(parameters.get("maxIterations"));
+                int deepest = new Integer(parameters.get("deepest"));
+                int depth = new Integer(parameters.get("depth"));
+                int starting = new Integer(parameters.get("starting"));
+                ((PiMeansAlgorithmSettings) algorithmSettings).setK(pk);
+                ((PiMeansAlgorithmSettings) algorithmSettings).setDepth(depth);
+                ((PiMeansAlgorithmSettings) algorithmSettings).setDeepest(deepest);
+                ((PiMeansAlgorithmSettings) algorithmSettings).setStarting(starting);
+                ((PiMeansAlgorithmSettings) algorithmSettings).setMaxIterations(pmaxIterations);
+            }
+            break;
         }
 
 
-        /*
-       switch (algorithm) {
-           case KMeansAlgorithmSettings.NAME:
-               algorithmSettings = new KMeansAlgorithmSettings();
-               int k  = new Integer(parameters.get("k"));
-               int maxIterations = new Integer(parameters.get("maxIterations"));
-               ((KMeansAlgorithmSettings) algorithmSettings).setK(k);
-               ((KMeansAlgorithmSettings) algorithmSettings).setMaxIterations(maxIterations);
-               break;
-           case KMeansPpAlgorithmSettings.NAME:
-               algorithmSettings = new KMeansPpAlgorithmSettings();
-               int kPp  = new Integer(parameters.get("k"));
-               int maxIterationsPp = new Integer(parameters.get("maxIterations"));
-               ((KMeansPpAlgorithmSettings) algorithmSettings).setK(kPp);
-               ((KMeansPpAlgorithmSettings) algorithmSettings).setMaxIterations(maxIterationsPp);
-               break;
-           case PiMeansAlgorithmSettings.NAME: {
-               algorithmSettings = new PiMeansAlgorithmSettings();
-               int pk = new Integer(parameters.get("k"));
-               int pmaxIterations = new Integer(parameters.get("maxIterations"));
-               int deepest = new Integer(parameters.get("deepest"));
-               int depth = new Integer(parameters.get("depth"));
-               int starting = new Integer(parameters.get("starting"));
-               ((PiMeansAlgorithmSettings) algorithmSettings).setK(pk);
-               ((PiMeansAlgorithmSettings) algorithmSettings).setDepth(depth);
-               ((PiMeansAlgorithmSettings) algorithmSettings).setDeepest(deepest);
-               ((PiMeansAlgorithmSettings) algorithmSettings).setStarting(starting);
-               ((PiMeansAlgorithmSettings) algorithmSettings).setMaxIterations(pmaxIterations);
-           }
-               break;
-           case PiKMeansAlgorithmSettings.NAME: {
-               algorithmSettings = new PiKMeansAlgorithmSettings();
-               int pk = new Integer(parameters.get("k"));
-               int pMaxIterations = new Integer(parameters.get("maxIterations"));
-               int deepest = new Integer(parameters.get("deepest"));
-               int depth = new Integer(parameters.get("depth"));
-               int starting = new Integer(parameters.get("starting"));
-               ((PiKMeansAlgorithmSettings) algorithmSettings).setK(pk);
-               ((PiKMeansAlgorithmSettings) algorithmSettings).setDepth(depth);
-               ((PiKMeansAlgorithmSettings) algorithmSettings).setDeepest(deepest);
-               ((PiKMeansAlgorithmSettings) algorithmSettings).setStarting(starting);
-               ((PiKMeansAlgorithmSettings) algorithmSettings).setMaxIterations(pMaxIterations);
-           }
-               break;
-            case NBCAlgorithmSettings.NAME:
-                algorithmSettings = new NBCAlgorithmSettings();
-                int kNBC = new Integer(parameters.get("k"));
-                ((NBCAlgorithmSettings) algorithmSettings).setK(kNBC);
-                break;
-            case CNBCAlgorithmSettings.NAME:
-                algorithmSettings = new CNBCAlgorithmSettings();
-                int kCNBC = new Integer(parameters.get("k"));
-                String icNBC = parameters.get("ic");
-                ((CNBCAlgorithmSettings) algorithmSettings).setK(kCNBC);
-                ((CNBCAlgorithmSettings) algorithmSettings).setIC(icNBC);
-                break;
-            case DBSCANAlgorithmSettings.NAME:
-                algorithmSettings = new DBSCANAlgorithmSettings();
-                double EpsDB = new Double(parameters.get("Eps"));
-                int MinPtsDB = new Integer(parameters.get("MinPts"));
-                ((DBSCANAlgorithmSettings) algorithmSettings).setEps(EpsDB);
-                ((DBSCANAlgorithmSettings) algorithmSettings).setMinPts(MinPtsDB);
-                break;
-           case CDBSCANAlgorithmSettings.NAME:
-                algorithmSettings = new CDBSCANAlgorithmSettings();
-                double EpsCDB = new Double(parameters.get("Eps"));
-                int MinPtsCDB = new Integer(parameters.get("MinPts"));
-                int deltaCDB = new Integer(parameters.get("d"));
-                String icCDB = parameters.get("ic");
-                ((CDBSCANAlgorithmSettings) algorithmSettings).setEps(EpsCDB);
-                ((CDBSCANAlgorithmSettings) algorithmSettings).setMinPts(MinPtsCDB);
-                ((CDBSCANAlgorithmSettings) algorithmSettings).setIC(icCDB);
-                ((CDBSCANAlgorithmSettings) algorithmSettings).setDelta(deltaCDB);
-                break;
-            case "NBCDMA":
-                algorithmSettings = new NBCDMAlgorithmSettings();
-                break;
-            case "DM_K-Means":
-                algorithmSettings = new DM_KMeansAlgorithmSettings();
-                break;
-            case "DBSCAN-NetTraffic":
-                algorithmSettings = new DbScanNetTrafficAlgorithmSettings();
-                break;
-            case "DBSCAN-Slicer":
-                algorithmSettings = new DbScanSlicerAlgorithmSettings();
-        }
-        */
 
         CDMBaseAlgorithmSettings baseAlgorithmSettings = (CDMBaseAlgorithmSettings) algorithmSettings;
 

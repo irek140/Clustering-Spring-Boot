@@ -6,15 +6,15 @@ import pl.project.clusteringspringboot.algorithms.common.ClusteringAlgorithm;
 import pl.project.clusteringspringboot.clustering.model.IClusteringData;
 import pl.project.clusteringspringboot.clustering.old.ClusteringTimer;
 import pl.project.clusteringspringboot.clustering.old.DataSourceManager;
+import pl.project.clusteringspringboot.datamining.CDMException;
+import pl.project.clusteringspringboot.datamining.MiningObject;
+import pl.project.clusteringspringboot.datamining.PhysicalDataSet;
 import pl.project.clusteringspringboot.datamining.data.CDMAlgorithm;
 import pl.project.clusteringspringboot.datamining.data.CDMFilePhysicalDataSet;
+import pl.project.clusteringspringboot.datamining.data.PhysicalAttribute;
 import pl.project.clusteringspringboot.datamining.resource.CDMBasicMiningObject;
 
-import javax.datamining.JDMException;
-import javax.datamining.MiningObject;
-import javax.datamining.clustering.ClusteringSettings;
-import javax.datamining.data.PhysicalAttribute;
-import javax.datamining.data.PhysicalDataSet;
+
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -25,7 +25,7 @@ public abstract class CDMBasicClusteringAlgorithm implements CDMAlgorithm {
     protected double[] min = null;
     protected double[] max = null;
     protected Collection<PhysicalAttribute> attributes;
-    protected ClusteringSettings clusteringSettings;
+    protected CDMClusteringSettings clusteringSettings;
     protected PhysicalDataSet physicalDataSet;
     protected int numberOfDimensions;
     protected ClusteringTimer timer = new ClusteringTimer();
@@ -40,7 +40,7 @@ public abstract class CDMBasicClusteringAlgorithm implements CDMAlgorithm {
      * @param clusteringSettings
      * @param physicalDataSet
      */
-    public CDMBasicClusteringAlgorithm(ClusteringSettings clusteringSettings,
+    public CDMBasicClusteringAlgorithm(CDMClusteringSettings clusteringSettings,
                                        PhysicalDataSet physicalDataSet) {
         this.clusteringSettings = clusteringSettings;
         this.physicalDataSet = physicalDataSet;
@@ -48,7 +48,7 @@ public abstract class CDMBasicClusteringAlgorithm implements CDMAlgorithm {
         if (physicalDataSet != null) {
             try {
                 attributes = physicalDataSet.getAttributes();
-            } catch (JDMException e) {
+            } catch (CDMException e) {
                 e.printStackTrace();
             }
 
