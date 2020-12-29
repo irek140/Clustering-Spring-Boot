@@ -42,6 +42,12 @@ public class ClusteringSpringBootApplication {
     @Autowired
     private static ClusteringSettingsPL utilClusteringSettings;
 
+    @Autowired
+    private static Dump dump;
+
+    @Autowired
+    private static DataSet dataSet;
+
 
     public static void main(String[] args) {
 
@@ -127,7 +133,7 @@ public class ClusteringSpringBootApplication {
             if (conn != null) {
                 CDMFilePhysicalDataSetFactory pdsf = new CDMFilePhysicalDataSetFactory();
                 PhysicalDataSet fpds = null;
-                fpds = DataSet.setAttributes(pdsf, cs);  // TODO
+                fpds = dataSet.setAttributes(pdsf, cs);  // TODO
                 conn.saveObject("MyPhysicalDataSet", fpds, true);
             } else {
                 log.warn("The dataset was not defined!");
@@ -174,7 +180,7 @@ public class ClusteringSpringBootApplication {
             log.info(executionStatus.getDescription());
 
             // log description in file
-            Dump.saveTimes(executionStatus.getDescription());
+            dump.saveTimes(executionStatus.getDescription());
 
             // THE END
             // -----------------------------------------------------------------
