@@ -19,7 +19,7 @@ import java.util.HashMap;
 /**
  * Created by Piotr Lasek on 30.05.2017.
  */
-public class ClusteringSettingsU {
+public class ClusteringSettingsPL {
 
     private final static Logger log = LogManager.getLogger("ClusteringSettings");
 

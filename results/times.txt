@@ -58,3 +58,5 @@ C-NBC	k=10	322	1922	6		19
 C-NBC	k=10	670	1789	7		19
 pi-Means	(k=4, mi=5)	15	10	
 pi-Means	(k=4, mi=5)	3998	84	
+pi-Means	(k=4, mi=5)	3746	260	
+pi-Means	(k=4, mi=5)	3691	60	

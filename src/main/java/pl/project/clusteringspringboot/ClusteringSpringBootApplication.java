@@ -18,7 +18,7 @@ import pl.project.clusteringspringboot.datamining.resource.ConnectionSpec;
 import pl.project.clusteringspringboot.datamining.task.BuildTask;
 import pl.project.clusteringspringboot.datamining.task.CDMBuildTaskFactory;
 import pl.project.clusteringspringboot.datamining.ExecutionStatus;
-import pl.util.ClusteringSettingsU;
+import pl.util.ClusteringSettingsPL;
 import pl.util.DataSet;
 import pl.util.Dump;
 import pl.util.Workspace;
@@ -40,7 +40,7 @@ public class ClusteringSpringBootApplication {
     private Workspace workspace;
 
     @Autowired
-    private static ClusteringSettingsU utilClusteringSettings;
+    private static ClusteringSettingsPL utilClusteringSettings;
 
 
     public static void main(String[] args) {
