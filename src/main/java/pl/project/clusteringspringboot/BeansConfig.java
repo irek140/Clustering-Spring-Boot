@@ -2,6 +2,7 @@ package pl.project.clusteringspringboot;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import pl.project.clusteringspringboot.datamining.resource.CDMFileConnectionFactory;
 import pl.util.Workspace;
 import pl.util.ClusteringSettingsPL;
 
@@ -18,6 +19,5 @@ public class BeansConfig {
     ClusteringSettingsPL utilClusteringSettings() {
         return new ClusteringSettingsPL();
     }
-
 
 }

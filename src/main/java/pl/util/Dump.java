@@ -2,6 +2,7 @@ package pl.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import pl.project.clusteringspringboot.clustering.model.IClusteringObject;
 
 import java.io.FileWriter;
@@ -13,6 +14,9 @@ import java.util.Collection;
 
 public class Dump {
 
+    @Autowired
+    private static Workspace workspace;
+
     private final static Logger log = LogManager.getLogger(Dump.class.getSimpleName());
 
     /**
@@ -21,7 +25,7 @@ public class Dump {
      * @param fName
      */
     public static void toFile(String string, String fName) {
-        String filePath = Workspace.getWorkspacePath() + "/results/" + fName;
+        String filePath = workspace.getWorkspacePath() + "/results/" + fName;
         log.info("Saving results to: " + filePath);
         FileWriter writer = null;
         try {
@@ -40,7 +44,7 @@ public class Dump {
      * @param ignoreNoise
      */
     public static void toFile(Collection<IClusteringObject> Dataset, String fName, boolean ignoreNoise) {
-        String filePath = Workspace.getWorkspacePath() + "/results/" + fName;
+        String filePath = workspace.getWorkspacePath() + "/results/" + fName;
         log.info("Saving results to: " + filePath);
         FileWriter writer = null;
         try {
@@ -70,7 +74,7 @@ public class Dump {
      * @param ignoreNoise
      */
     public static void toFile(ArrayList<double[]> Dataset, String fName, boolean ignoreNoise) {
-        String filePath = Workspace.getWorkspacePath() + "/results/" + fName;
+        String filePath = workspace.getWorkspacePath() + "/results/" + fName;
         log.info("Saving results to: " + filePath);
         FileWriter writer = null;
         try {
@@ -103,7 +107,7 @@ public class Dump {
      * @param description
      */
     public static void saveTimes(String description) {
-        String filePath = Workspace.getWorkspacePath() + "/results/times.txt";
+        String filePath = workspace.getWorkspacePath() + "/results/times.txt";
         try {
             FileWriter fw = new FileWriter(filePath, true);
             fw.write(description + "\n");

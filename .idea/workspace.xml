@@ -3,13 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="98a29bfa-2e09-4f5e-934c-006d7c747c00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/birch2_C-NBC_(k=10) (clusters=504).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/birch2_C-NBC_(k=10) (clusters=504).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/birch2_C-NBC_(k=10) (clusters=506).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/birch2_C-NBC_(k=10) (clusters=506).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_C-DBSCAN_(Eps=10.0, minPts=4) (clusters=4).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_C-DBSCAN_(Eps=10.0, minPts=4) (clusters=4).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_C-DBSCAN_(Eps=10.0, minPts=4) (clusters=6).csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_C-DBSCAN_(Eps=10.0, minPts=4) (clusters=6).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_DBSCAN_(Eps=10.0, minPts=4) (clusters=5).png" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_DBSCAN_(Eps=10.0, minPts=4) (clusters=5).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/my-file-2d_NBC_(k=10) (clusters=22).png" beforeDir="false" afterPath="$PROJECT_DIR$/results/my-file-2d_NBC_(k=10) (clusters=22).png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/times.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/times.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/BeansConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/ClusteringSpringBootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/util/ClusteringSettingsU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/util/ClusteringSettingsPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/PlotPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/project/clusteringspringboot/algorithms/common/PlotPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/util/Dump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/util/Dump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/util/SetConstraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/util/SetConstraints.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/BeansConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/BeansConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/ClusteringSpringBootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/project/clusteringspringboot/ClusteringSpringBootApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/util/ClusteringSettingsU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/util/Dump.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/util/Dump.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +146,7 @@
       <workItem from="1608734092231" duration="617000" />
       <workItem from="1609174650839" duration="16612000" />
       <workItem from="1609239291573" duration="10960000" />
-      <workItem from="1609266007404" duration="5516000" />
+      <workItem from="1609266007404" duration="7537000" />
     </task>
     <task id="LOCAL-00001" summary="create logger">
       <created>1605522073302</created>
@@ -182,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609252607362</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactoring code">
+      <created>1609278933856</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609278933856</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +224,7 @@
     <MESSAGE value="little changes" />
     <MESSAGE value="after NBC and DBSCAN" />
     <MESSAGE value="Finish working with all algorithms &amp; remove JDM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish working with all algorithms &amp; remove JDM" />
+    <MESSAGE value="refactoring code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring code" />
   </component>
 </project>

@@ -6,6 +6,7 @@ package pl.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import pl.project.clusteringspringboot.algorithms.CNBC.CNBCRTreePoint;
 import pl.project.clusteringspringboot.algorithms.CNBC.InstanceConstraints;
 import pl.project.clusteringspringboot.clustering.CDMCluster;
@@ -20,11 +21,14 @@ import java.util.Scanner;
  */
 public class SetConstraints {
 
+    @Autowired
+    private static Workspace workspace;
+
     protected final static Logger log = LogManager.getLogger(SetConstraints.class.getSimpleName());
 
     private static ArrayList<ArrayList<String>> readConstraintsFromFile(String fileName) {
 
-        String filePath = Workspace.getWorkspacePath() + "/" + fileName;
+        String filePath = workspace.getWorkspacePath() + "/" + fileName;
 
         Scanner s = null;
         try {

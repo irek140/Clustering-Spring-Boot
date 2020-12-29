@@ -37,7 +37,7 @@ public class ClusteringSpringBootApplication {
 
 
     @Autowired
-    private Workspace workspace;
+    private static Workspace workspace;
 
     @Autowired
     private static ClusteringSettingsPL utilClusteringSettings;
@@ -61,10 +61,10 @@ public class ClusteringSpringBootApplication {
                         //"algorithm=C-NBC",
                         //"algorithm=k-Means",
                         //"algorithm=k-Means++",
-                        //"algorithm=NBC",
+                        "algorithm=NBC",
                         //"algorithm=DBSCAN",
                         //"algorithm=C-DBSCAN",
-                        "algorithm=pi-Means",
+                        //"algorithm=pi-Means",
 
                         //-----Data Sets-----
                         //"data=\\src\\main\\java\\pl\\project\\clusteringspringboot\\data\\my-file-2d.txt",
@@ -84,7 +84,7 @@ public class ClusteringSpringBootApplication {
                         //"parameters=k:8;maxIterations:5;deepest:15;depth:15;starting:12;dump"
                         //NBC
                         //"parameters=k:8;maxIterations:5;deepest:15;depth:15;starting:12;dump"
-                        //"parameters=k:10;dump;plot;ic:random_4"
+                        "parameters=k:10;dump;plot;ic:random_4"
                         //DBSCAN
                         //"parameters=Eps:10;MinPts:4;dump:yes;ic:random_10"
                         //"parameters=Eps:10;MinPts:4;dump:yes;plot:yes;ic:random_10"
@@ -94,25 +94,24 @@ public class ClusteringSpringBootApplication {
                         //"parameters=Eps:10;MinPts:4;d:4;ic:random_10;dump:yes"
                         //"parameters=Eps:10;MinPts:4;d:4;ic:random_10;dump:yes;plot:yes"
                         //pi-Means
-                        "parameters=k:4;maxIterations:5;deepest:1;depth:1;starting:1;dump"
-
+                        //"parameters=k:4;maxIterations:5;deepest:1;depth:1;starting:1;dump"
 
 
                 };
             }
 
-            Workspace.readArgs(args);
+            workspace.readArgs(args);
 
             // DATASET PREPARATION
             // -----------------------------------------------------------------
 
             log.info("Start!");
 
-            String cdmPath = Workspace.getWorkspacePath();
+            String cdmPath = workspace.getWorkspacePath();
 
             long time1 = new Date().getTime();
 
-            String dataFilePath = Workspace.getDataFilePath();
+            String dataFilePath = workspace.getDataFilePath();
 
             log.info("Preparing input data...");
 
@@ -146,8 +145,8 @@ public class ClusteringSpringBootApplication {
             clusteringSettings.setDescription("test description");
             clusteringSettings.setAggregationFunction(AggregationFunction.euclidean);
 
-            String algorithm = Workspace.getAlgorithm();
-            HashMap<String, String> parameters = Workspace.getParameters();
+            String algorithm = workspace.getAlgorithm();
+            HashMap<String, String> parameters = workspace.getParameters();
             AlgorithmSettings algorithmSettings =
                     utilClusteringSettings.prepare(algorithm, parameters);
 

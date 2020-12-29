@@ -2,6 +2,7 @@ package pl.project.clusteringspringboot.algorithms.common;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import pl.project.clusteringspringboot.algorithms.CNBC.CNBCRTreePoint;
 import pl.project.clusteringspringboot.algorithms.CNBC.InstanceConstraints;
 import pl.project.clusteringspringboot.clustering.CDMCluster;
@@ -21,6 +22,9 @@ import java.util.Collection;
 
 public class PlotPanel extends JPanel implements MouseListener, MouseWheelListener, MouseMotionListener
 {
+
+	@Autowired
+	private static Workspace workspace;
 
 	private final double maxX;
 	RTreeIndex rtree;
@@ -522,7 +526,7 @@ public class PlotPanel extends JPanel implements MouseListener, MouseWheelListen
 		Graphics g = bufferedImage.getGraphics();
 		plotPanel.paintComponent(g);
 		try {
-			String filePath = Workspace.getWorkspacePath() + "/results/" + fileName;
+			String filePath = workspace.getWorkspacePath() + "/results/" + fileName;
 			boolean res = ImageIO.write(bufferedImage, "png", new File(filePath));
 			if (res) {
 				log.info("Image saved to: " + filePath);

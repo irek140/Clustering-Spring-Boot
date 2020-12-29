@@ -60,3 +60,18 @@ pi-Means	(k=4, mi=5)	15	10
 pi-Means	(k=4, mi=5)	3998	84	
 pi-Means	(k=4, mi=5)	3746	260	
 pi-Means	(k=4, mi=5)	3691	60	
+pi-Means	(k=4, mi=5)	3768	79	
+k-Means	(k=8, mi=5)	128	407	
+C-NBC	k=10	13250	74438	13		504
+C-NBC	k=10	14330	76848	22		506
+k-Means++	(k=8, mi=5)	22	473	
+NBC	k=8	749	1686		32
+NBC	k=10	1402	2061		22
+DBSCAN	(Eps=10.0, minPts=4)	426	1524		5
+C-DBSCAN	(Eps=10.0, minPts=4)	859	1934	457		4
+C-DBSCAN	(Eps=10.0, minPts=4)	732	2543	1196		8
+C-DBSCAN	(Eps=10.0, minPts=4)	526	2387	1202		6
+pi-Means	(k=4, mi=5)	2195	66	
+pi-Means	(k=4, mi=5)	2296	2071	
+pi-Means	(k=4, mi=5)	2456	87	
+NBC	k=10	11559	63123		507
